@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Tawa and Grill - Menu</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/fi.ico">
+    <link rel="shortcut icon" href="images/fi.ico" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/camera.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: false,
+                thumbnails: false,
+                height: '51.43171806167401%',
+                caption: false,
+                navigation: true,
+                fx: 'mosaic'
+            });
+        });
+
+        $(document).ready(function () {
+            var owl = $("#owl");
+            owl.owlCarousel({
+                items: 1,
+                itemsDesktop: [995, 1],
+                itemsDesktopSmall: [767, 1],
+                itemsTablet: [700, 1],
+                itemsMobile: [479, 1],
+                navigation: true,
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Array of testimonials (unchanged)
+            const testimonials = [
+                { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
+                { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
+                { text: "A cozy atmosphere and delicious dishes!", author: "Amina M." },
+                { text: "Highly recommended for foodies.", author: "Karan T." },
+                { text: "Authentic flavors that remind me of home.", author: "Mohtashim P." },
+                { text: "A must-visit for every food lover!", author: "Rohan D." },
+                { text: "The service was exceptional and the food divine.", author: "Nisha V." },
+                { text: "Loved the presentation and taste!", author: "Sami G." },
+                { text: "Affordable yet premium dining experience.", author: "Manoj K." },
+                { text: "The desserts are a hidden gem!", author: "Sneha J." },
+                { text: "Never disappoints, every visit is delightful.", author: "Arjun L." },
+                { text: "Perfect place for family dinners.", author: "Meena R." },
+                { text: "Exceptional quality and hospitality.", author: "Saif K." },
+                { text: "Tandoori platters are a must-try.", author: "Ishita S." },
+                { text: "Great place for group celebrations.", author: "Arham N." }
+            ];
+
+            // Function to select random testimonials (unchanged)
+            function getRandomTestimonials(array, count) {
+                const shuffled = array.sort(() => 0.5 - Math.random()); // Shuffle array
+                return shuffled.slice(0, count); // Return the first `count` items
+            }
+
+            // Function to display the testimonials dynamically (unchanged)
+            function displayTestimonials() {
+                const container = document.getElementById("testimonial-container");
+                container.innerHTML = "";
+                const selectedTestimonials = getRandomTestimonials(testimonials, 3);
+                selectedTestimonials.forEach(({ text, author }) => {
+                    const testimonialElement = document.createElement("p");
+                    testimonialElement.classList.add("testimonial");
+                    testimonialElement.innerHTML = `"${text}" - <span>${author}</span>`;
+                    container.appendChild(testimonialElement);
+                });
+            }
+
+            // Insert testimonials and update every 5 seconds (unchanged)
+            displayTestimonials();
+            setInterval(displayTestimonials, 5000);
+
+            // Menu Data (unchanged)
+            const menuData = {
+                grilledbites: {
+                    title: "Grilled Bites",
+                    description: "Succulent pieces of chicken, lamb, or beef marinated with aromatic spices, herbs, and a touch of lemon juice. Grilled to perfection over a charcoal flame, these tender morsels are crispy on the outside and juicy on the inside. A true delight for meat lovers, offering a smoky flavor that’s irresistible with every bite. Served with a side of tangy dipping sauce and a fresh garnish of cilantro.",
+                    link: "images/menu/grilledbites.jpeg",
+                    type: "Non-Veg",
+                },
+                fry_pan_treat_tawa_special: {
+                    title: "Fry Pan Treat Tawa Special",
+                    description: "A mouthwatering blend of tender meats and fresh vegetables cooked on a sizzling hot tawa. The dish is infused with a mix of traditional spices and herbs, creating a perfect harmony of flavors. As it sizzles, the aroma fills the air, enticing your senses. Garnished with fresh coriander and a squeeze of lemon for that added zest, this dish is sure to tantalize your taste buds.",
+                    link: "images/menu/fry_pan_treat_tawa_special.jpeg",
+                    type: "Non-Veg",
+                },
+                chicken_mutton_gravy: {
+                    title: "Chicken & Mutton Gravy",
+                    description: "Rich, creamy gravies made with the finest cuts of tender chicken and mutton, slow-cooked to perfection. The meat is cooked in a blend of exotic spices like garam masala, turmeric, and cumin, creating a deep, aromatic flavor. Simmered to tenderize the meat, the sauce is velvety smooth and full of bold, comforting flavors. Served hot with steamed rice or naan for a truly satisfying experience.",
+                    link: "images/menu/chicken_mutton_gravy.jpeg",
+                    type: "Non-Veg",
+                },
+                fish_veg_pulao: {
+                    title: "Fish & Veg Pulao",
+                    description: "A fragrant, aromatic rice dish that combines tender, flaky fish and colorful vegetables. The pulao is cooked with a blend of fragrant spices like cardamom, cloves, and cinnamon, giving it a warm and comforting flavor. Each grain of rice is perfectly cooked, absorbing the flavors of the spices and the freshness of the vegetables. The fish adds a delicate texture that complements the rice, making this dish a perfect balance of flavors.",
+                    link: "images/menu/fish_veg_pulao.jpeg",
+                    type: "Non-Veg",
+                },
+                non_veg_soup_starters: {
+                    title: "Non-Veg Soup Starters",
+                    description: "A warm, comforting starter soup made with delicious cuts of meat such as chicken or lamb, simmered in a flavorful broth with aromatic herbs and spices. This rich, savory soup is designed to awaken your appetite with its deep umami flavor. Perfectly balanced with a hint of heat and a touch of freshness from cilantro, it's the ideal way to begin your meal.",
+                    link: "images/menu/non_veg_soup_starters.jpeg",
+                    type: "Non-Veg",
+                },
+                main_cource_chinese_rice: {
+                    title: "Main Course: Chinese Rice",
+                    description: "A savory, stir-fried rice dish with a medley of colorful vegetables, soy sauce, and your choice of meat or tofu. Each grain of rice is infused with flavors of garlic, ginger, and a variety of spices. The dish is topped with a drizzle of soy sauce for a slightly salty flavor, while fresh herbs add a pop of color and freshness. Whether served with chicken, pork, or tofu, this dish makes for a hearty and satisfying main course.",
+                    link: "images/menu/main_cource_chinese_rice.jpeg",
+                    type: "Veg/Non-Veg",
+                },
+                nonveg_noodles_sea_food_starters: {
+                    title: "Non-Veg Noodles & Seafood Starters",
+                    description: "A tantalizing blend of noodles stir-fried with succulent seafood like prawns, squid, and fish. The dish is cooked with a variety of spices that create a balance of heat, sweetness, and saltiness. The seafood provides a burst of flavor with every bite, while the noodles have a satisfying crunch. This dish is an explosion of textures and flavors, perfect as a starter or a snack.",
+                    link: "images/menu/nonveg_noodles_sea_food_starters.jpeg",
+                    type: "Non-Veg",
+                },
+                seafood_main_rice_noodles: {
+                    title: "Seafood Main Rice & Noodles",
+                    description: "A hearty, savory blend of rice and noodles packed with fresh seafood like prawns, crab, and squid. The dish is cooked in exotic spices and sauces, adding layers of flavor with each bite. The rice is perfectly cooked, and the noodles are stir-fried to achieve a delightful texture. The combination of rice, noodles, and seafood makes for a filling and satisfying main course that’s sure to please any seafood lover.",
+                    link: "images/menu/seafood_main_rice_noodles.jpeg",
+                    type: "Non-Veg",
+                },
+                veg_soup_starters: {
+                    title: "Veg Soup Starters",
+                    description: "A healthy and aromatic vegetable-based soup, made with a selection of fresh, seasonal vegetables like carrots, beans, and peas. The broth is rich and flavorful, created by simmering the vegetables with herbs and light spices. This soup offers a refreshing and light start to your meal, with just the right amount of seasoning to awaken your palate. Perfect for vegetarians or anyone looking for a nourishing, guilt-free option.",
+                    link: "images/menu/veg_soup_starters.jpeg",
+                    type: "Veg",
+                },
+                veg_rice_noodles: {
+                    title: "Veg Rice & Noodles",
+                    description: "A comforting vegetarian dish that features a blend of rice and noodles, stir-fried with an assortment of fresh vegetables like bell peppers, broccoli, and mushrooms. The dish is lightly seasoned with soy sauce and garlic, offering a delicious balance of savory flavors. It’s a wholesome and satisfying meal, perfect for those who want a flavorful vegetarian option without compromising on taste.",
+                    link: "images/menu/veg_rice_noodles.jpeg",
+                    type: "Veg",
+                },
+                papad_roti_desserts: {
+                    title: "Papad, Roti & Desserts",
+                    description: "A delightful end to your meal with crispy papad, soft, warm roti, and a selection of delectable desserts. The papad adds a satisfying crunch, while the roti is light and fluffy, perfect for scooping up rich gravies. For dessert, indulge in a variety of sweet treats like gulab jamun, kheer, and more. This combination of savory and sweet items provides the perfect finale to your meal.",
+                    link: "images/menu/papad_roti_desserts.jpeg",
+                    type: "Veg",
+                },
+            };
+
+            function updateMenuContent(menuKey) {
+            const menuContent = document.getElementById("menu-content");
+            const selectedItem = menuData[menuKey];
+            let vegIcon = "";
+            let nonVegIcon = "";
+
+            // Determine the icons based on the item type
+            if (selectedItem.type.includes("Veg")) {
+                vegIcon = '<img src="images/veg-icon.png" alt="Veg" class="menu-icon">'; // path to the green circle image
+            }
+            if (selectedItem.type.includes("Non-Veg")) {
+                nonVegIcon = '<img src="images/non-veg-icon.png" alt="Non-Veg" class="menu-icon">'; // path to the red circle image
+            }
+
+            menuContent.innerHTML = `
+                <div class="menu-item-container">
+                    <h3 class="menu-title">${selectedItem.title}</h3>
+                    <div class="menu-icons">
+                        ${vegIcon} ${nonVegIcon}
+                    </div>
+                </div>
+                <p>${selectedItem.description}</p>
+                <p>${selectedItem.type}</p>
+                <br>
+                <a href="${selectedItem.link}" download class="download-link">Download ${selectedItem.title}</a>
+            `;
+        }
+
+
+
+
+            // Handle click on menu items
+            document.querySelectorAll(".menu-item").forEach((item) => {
+                item.addEventListener("click", function () {
+                    // Remove active class from all menu items
+                    document.querySelectorAll(".menu-item").forEach((menuItem) => {
+                        menuItem.classList.remove("active");
+                    });
+
+                    // Add active class to the clicked item
+                    this.classList.add("active");
+
+                    // Get the data-target attribute value and update the content
+                    const menuKey = this.getAttribute("data-target");
+                    updateMenuContent(menuKey);
+                });
+            });
+
+            // Initial setup: Display content for the first item (Grilled Bites) on page load
+            updateMenuContent("grilledbites");
+        });
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Menu -->
+        <div class="container">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div class="info-section">
+        <div class="container">
+            <div class="address">
+                <p><i class="fa fa-map-marker-alt"></i> Ground Floor, Ostwal Orbit Kanakia, Mira Bhayandar Rd, Mira Road
+                    East,
+                    Thane, Maharashtra 401107</p>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Bombay Tawa & Grill Logo">
+            </div>
+            <div class="reservation">
+                <p><i class="fa fa-phone"></i>9324856960</p>
+                <p><i class="fa fa-phone"></i>9137115338</p>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-container">
+                <!-- Sidebar Menu -->
+                <div class="menu-sidebar">
+                    <ul id="menu-items">
+                        <li class="menu-item active" data-target="grilledbites">Grilled Bites</li>
+                        <li class="menu-item" data-target="fry_pan_treat_tawa_special">Fry Pan Treat Tawa Special</li>
+                        <li class="menu-item" data-target="chicken_mutton_gravy">Chicken & Mutton Gravy</li>
+                        <li class="menu-item" data-target="fish_veg_pulao">Fish & Veg Pulao</li>
+                        <li class="menu-item" data-target="non_veg_soup_starters">Non-Veg Soup Starters</li>
+                        <li class="menu-item" data-target="main_cource_chinese_rice">Main Course: Chinese Rice</li>
+                        <li class="menu-item" data-target="nonveg_noodles_sea_food_starters">Non-Veg Noodles & Seafood
+                            Starters</li>
+                        <li class="menu-item" data-target="seafood_main_rice_noodles">Seafood Main Rice & Noodles</li>
+                        <li class="menu-item" data-target="veg_soup_starters">Veg Soup Starters</li>
+                        <li class="menu-item" data-target="veg_rice_noodles">Veg Rice & Noodles</li>
+                        <li class="menu-item" data-target="papad_roti_desserts">Papad, Roti & Desserts</li>
+                    </ul>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="menu-content" id="menu-content">
+                    <!-- Content for grilledbites (default on page load) -->
+                    <h3>Grilled Bites</h3>
+                    <p>Succulent pieces of meat marinated with aromatic spices and grilled
+                        to perfection. A true delight for meat lovers.</p>
+                    <p>Non-Veg</p>
+                    <a href="images/menu/grilledbites.jpeg" download class="download-link">Download Grilled Bites</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-dishes">
+        <div class="container">
+            <img src="images/best-dishes-header.png">
+            <div class="dish-cards">
+                <div class="dish-card" style="background-image: url('images/page5_img1.jpg');">
+                    <h3>TANDOORI KEBABS</h3>
+                    <p>Freshly grilled with the perfect blend of spices.</p>
+                </div>
+                <div class="dish-card" style="background-image: url('images/big8.jpg');">
+                    <h3>FAMILY PLATTERS</h3>
+                    <p>Big portions for your special gatherings.</p>
+                </div>
+                <div class="dish-card" style="background-image: url('images/page1_img1.jpg');">
+                    <h3>VEG & NON-VEG</h3>
+                    <p>A wide selection to satisfy every craving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div id="testimonial-container"></div>
+    </section>
+
+
+    <!-- Download Menu Section -->
+    <section class="download-menu">
+        <h2>Check Out Our Menu</h2>
+        <p>Download the full menu to see all our delicious offerings.</p>
+        <a href="menu.pdf" class="download-link" download>Download Menu</a>
+    </section>
+</body>
+
+</html>

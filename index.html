@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bombay Tawa and Grill</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="images/fi.ico">
+  <link rel="shortcut icon" href="images/fi.ico" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/camera.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/superfish.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
+  <script src="js/jquery.mobilemenu.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      jQuery('#camera_wrap').camera({
+        loader: false,
+        pagination: false,
+        thumbnails: false,
+        height: '51.43171806167401%',
+        caption: false,
+        navigation: true,
+        fx: 'mosaic'
+      });
+    });
+
+    $(document).ready(function () {
+      var owl = $("#owl");
+      owl.owlCarousel({
+        items: 1,
+        itemsDesktop: [995, 1],
+        itemsDesktopSmall: [767, 1],
+        itemsTablet: [700, 1],
+        itemsMobile: [479, 1],
+        navigation: true,
+      });
+    });
+
+    // Array of testimonials
+const testimonials = [
+  { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
+  { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
+  { text: "A cozy atmosphere and delicious dishes!", author: "Amina M." },
+  { text: "Highly recommended for foodies.", author: "Karan T." },
+  { text: "Authentic flavors that remind me of home.", author: "Mohtashim P." },
+  { text: "A must-visit for every food lover!", author: "Rohan D." },
+  { text: "The service was exceptional and the food divine.", author: "Nisha V." },
+  { text: "Loved the presentation and taste!", author: "Sami G." },
+  { text: "Affordable yet premium dining experience.", author: "Manoj K." },
+  { text: "The desserts are a hidden gem!", author: "Sneha J." },
+  { text: "Never disappoints, every visit is delightful.", author: "Arjun L." },
+  { text: "Perfect place for family dinners.", author: "Meena R." },
+  { text: "Exceptional quality and hospitality.", author: "Saif K." },
+  { text: "Tandoori platters are a must-try.", author: "Ishita S." },
+  { text: "Great place for group celebrations.", author: "Arham N." }
+];
+
+// Function to select random testimonials
+function getRandomTestimonials(array, count) {
+  const shuffled = array.sort(() => 0.5 - Math.random()); // Shuffle array
+  return shuffled.slice(0, count); // Return the first `count` items
+}
+
+// Insert testimonials into the DOM
+function displayTestimonials() {
+  const container = document.getElementById("testimonial-container");
+  container.innerHTML = ""; 
+  const selectedTestimonials = getRandomTestimonials(testimonials, 3);
+  selectedTestimonials.forEach(({ text, author }) => {
+    const testimonialElement = document.createElement("p");
+    testimonialElement.classList.add("testimonial");
+    testimonialElement.innerHTML = `"${text}" - <span>${author}</span>`;
+    container.appendChild(testimonialElement);
+  });
+}
+
+// Load testimonials on page load
+document.addEventListener("DOMContentLoaded", () => {
+  displayTestimonials(); // Initial display
+  setInterval(displayTestimonials, 5000); // Update every 5 seconds
+});
+
+
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <!-- Menu -->
+    <div class="container">
+      <nav class="menu">
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <div class="info-section">
+    <div class="container">
+      <div class="address">
+        <p><i class="fa fa-map-marker-alt"></i> Ground Floor, Ostwal Orbit Kanakia, Mira Bhayandar Rd, Mira Road East,
+          Thane, Maharashtra 401107</p>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="Bombay Tawa & Grill Logo">
+      </div>
+      <div class="reservation">
+        <p><i class="fa fa-phone"></i>9324856960</p>
+        <p><i class="fa fa-phone"></i>9137115338</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg1">
+    <div class="slider_wrapper">
+      <div class="container_12">
+        <div class="grid_12">
+          <div id="camera_wrap">
+            <div data-src="images/slide.jpg"></div>
+            <div data-src="images/slide1.jpg"></div>
+            <div data-src="images/slide2.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="best-dishes">
+    <div class="container">
+      <img src="images/best-dishes-header.png">
+      <div class="dish-cards">
+        <div class="dish-card" style="background-image: url('images/page5_img1.jpg');">
+          <h3>TANDOORI KEBABS</h3>
+          <p>Freshly grilled with the perfect blend of spices.</p>
+        </div>
+        <div class="dish-card" style="background-image: url('images/big8.jpg');">
+          <h3>FAMILY PLATTERS</h3>
+          <p>Big portions for your special gatherings.</p>
+        </div>
+        <div class="dish-card" style="background-image: url('images/page1_img1.jpg');">
+          <h3>VEG & NON-VEG</h3>
+          <p>A wide selection to satisfy every craving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div id="testimonial-container"></div>
+  </section>
+  
+
+  <!-- Download Menu Section -->
+  <section class="download-menu">
+    <h2>Check Out Our Menu</h2>
+    <p>Download the full menu to see all our delicious offerings.</p>
+    <a href="menu.pdf" class="download-link" download>Download Menu</a>
+  </section>
+</body>
+
+</html>
