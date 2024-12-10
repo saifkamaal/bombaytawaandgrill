@@ -7,6 +7,11 @@
 #f9a945 - organge
  */
 
+ * {
+  outline: 1px solid rgba(255, 0, 0, 0.5); /* Highlight all elements for debugging */
+}
+
+
 /* Reset */
 * {
   margin: 10;
@@ -19,8 +24,12 @@ body {
   background-color: #f4f4f4; /* Light background for contrast */
   color: #1a3c2b;
   background: url(../images/wood_bg.jpg) center 79px repeat-x;
-
+  background-size: cover; /* Scale background to cover the viewport */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0; /* Ensure there's no margin causing overflow */
+  padding: 0;
 }
+
 
 /* Container */
 .container {
@@ -433,6 +442,40 @@ body {
   text-decoration: underline;
 }
 
+.container, .info-section .container, .slider_wrapper, .dish-cards {
+  max-width: 100%; /* Prevent overflow */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0 auto; /* Center the contents */
+}
+
+body, html {
+  width: 100%; /* Ensure it doesn’t exceed the viewport */
+  height: 100%; /* Maintain full viewport coverage */
+}
+
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .dish-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card {
+    width: 90%; /* Reduce width for smaller screens */
+  }
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent any global horizontal scrolling */
+}
 
 
 
