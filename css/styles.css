@@ -226,6 +226,7 @@ body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .dish-cards {
@@ -238,6 +239,20 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .best-dishes img {
+      max-width: 90%; /* Slight padding for smaller screens */
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .best-dishes img {
+      max-width: 100%; /* Full width for very small screens */
+  }
+}
+
 
 
 
