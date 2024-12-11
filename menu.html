@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html style="font-size: 16px;" lang="en"><head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1KK1Y3BTT"></script>
 <script>
@@ -11,319 +9,212 @@
 
   gtag('config', 'G-C1KK1Y3BTT');
 </script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bombay Tawa and Grill - Menu</title>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="images/fi.ico">
-    <link rel="shortcut icon" href="images/fi.ico" />
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/camera.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.1.1.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/superfish.js"></script>
-    <script src="js/jquery.equalheights.js"></script>
-    <script src="js/jquery.mobilemenu.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/camera.js"></script>
-    <script>
-        $(document).ready(function () {
-            jQuery('#camera_wrap').camera({
-                loader: false,
-                pagination: false,
-                thumbnails: false,
-                height: '51.43171806167401%',
-                caption: false,
-                navigation: true,
-                fx: 'mosaic'
-            });
-        });
-
-        $(document).ready(function () {
-            var owl = $("#owl");
-            owl.owlCarousel({
-                items: 1,
-                itemsDesktop: [995, 1],
-                itemsDesktopSmall: [767, 1],
-                itemsTablet: [700, 1],
-                itemsMobile: [479, 1],
-                navigation: true,
-            });
-        });
-
-
-        document.addEventListener("DOMContentLoaded", () => {
-            // Array of testimonials (unchanged)
-            const testimonials = [
-                { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
-                { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
-                { text: "A cozy atmosphere and delicious dishes!", author: "Amina M." },
-                { text: "Highly recommended for foodies.", author: "Karan T." },
-                { text: "Authentic flavors that remind me of home.", author: "Mohtashim P." },
-                { text: "A must-visit for every food lover!", author: "Rohan D." },
-                { text: "The service was exceptional and the food divine.", author: "Nisha V." },
-                { text: "Loved the presentation and taste!", author: "Sami G." },
-                { text: "Affordable yet premium dining experience.", author: "Manoj K." },
-                { text: "The desserts are a hidden gem!", author: "Sneha J." },
-                { text: "Never disappoints, every visit is delightful.", author: "Arjun L." },
-                { text: "Perfect place for family dinners.", author: "Meena R." },
-                { text: "Exceptional quality and hospitality.", author: "Saif K." },
-                { text: "Tandoori platters are a must-try.", author: "Ishita S." },
-                { text: "Great place for group celebrations.", author: "Arham N." }
-            ];
-
-            // Function to select random testimonials (unchanged)
-            function getRandomTestimonials(array, count) {
-                const shuffled = array.sort(() => 0.5 - Math.random()); // Shuffle array
-                return shuffled.slice(0, count); // Return the first `count` items
-            }
-
-            // Function to display the testimonials dynamically (unchanged)
-            function displayTestimonials() {
-                const container = document.getElementById("testimonial-container");
-                container.innerHTML = "";
-                const selectedTestimonials = getRandomTestimonials(testimonials, 3);
-                selectedTestimonials.forEach(({ text, author }) => {
-                    const testimonialElement = document.createElement("p");
-                    testimonialElement.classList.add("testimonial");
-                    testimonialElement.innerHTML = `"${text}" - <span>${author}</span>`;
-                    container.appendChild(testimonialElement);
-                });
-            }
-
-            // Insert testimonials and update every 5 seconds (unchanged)
-            displayTestimonials();
-            setInterval(displayTestimonials, 5000);
-
-            // Menu Data (unchanged)
-            const menuData = {
-                grilledbites: {
-                    title: "Grilled Bites",
-                    description: "Succulent pieces of chicken, lamb marinated with aromatic spices, herbs, and a touch of lemon juice. Grilled to perfection over a charcoal flame, these tender morsels are crispy on the outside and juicy on the inside. A true delight for meat lovers, offering a smoky flavor that’s irresistible with every bite. Served with a side of tangy dipping sauce and a fresh garnish of cilantro.",
-                    link: "images/menu/grilledbites.jpeg",
-                    type: "Non-Veg",
-                },
-                fry_pan_treat_tawa_special: {
-                    title: "Fry Pan Treat Tawa Special",
-                    description: "A mouthwatering blend of tender meats and fresh vegetables cooked on a sizzling hot tawa. The dish is infused with a mix of traditional spices and herbs, creating a perfect harmony of flavors. As it sizzles, the aroma fills the air, enticing your senses. Garnished with fresh coriander and a squeeze of lemon for that added zest, this dish is sure to tantalize your taste buds.",
-                    link: "images/menu/fry_pan_treat_tawa_special.jpeg",
-                    type: "Non-Veg",
-                },
-                chicken_mutton_gravy: {
-                    title: "Chicken & Mutton Gravy",
-                    description: "Rich, creamy gravies made with the finest cuts of tender chicken or mutton, slow-cooked to perfection. The meat is cooked in a blend of exotic spices like garam masala, turmeric, and cumin, creating a deep, aromatic flavor. Simmered to tenderize the meat, the sauce is velvety smooth and full of bold, comforting flavors. Served hot with steamed rice or naan for a truly satisfying experience.",
-                    link: "images/menu/chicken_mutton_gravy.jpeg",
-                    type: "Non-Veg",
-                },
-                fish_veg_pulao: {
-                    title: "Fish & Veg Pulao",
-                    description: "A fragrant, aromatic rice dish that combines tender, flaky fish and colorful vegetables. The pulao is cooked with a blend of fragrant spices like cardamom, cloves, and cinnamon, giving it a warm and comforting flavor. Each grain of rice is perfectly cooked, absorbing the flavors of the spices and the freshness of the vegetables. The fish adds a delicate texture that complements the rice, making this dish a perfect balance of flavors.",
-                    link: "images/menu/fish_veg_pulao.jpeg",
-                    type: "Non-Veg",
-                },
-                non_veg_soup_starters: {
-                    title: "Non-Veg Soup Starters",
-                    description: "A warm, comforting starter soup made with delicious cuts of meat such as chicken or lamb, simmered in a flavorful broth with aromatic herbs and spices. This rich, savory soup is designed to awaken your appetite with its deep umami flavor. Perfectly balanced with a hint of heat and a touch of freshness from cilantro, it's the ideal way to begin your meal.",
-                    link: "images/menu/non_veg_soup_starters.jpeg",
-                    type: "Non-Veg",
-                },
-                main_cource_chinese_rice: {
-                    title: "Main Course: Chinese Rice",
-                    description: "A savory, stir-fried rice dish with a medley of colorful vegetables, soy sauce, and your choice of meat or tofu. Each grain of rice is infused with flavors of garlic, ginger, and a variety of spices. The dish is topped with a drizzle of soy sauce for a slightly salty flavor, while fresh herbs add a pop of color and freshness. Whether served with chicken, or tofu, this dish makes for a hearty and satisfying main course.",
-                    link: "images/menu/main_cource_chinese_rice.jpeg",
-                    type: "Veg/Non-Veg",
-                },
-                nonveg_noodles_sea_food_starters: {
-                    title: "Non-Veg Noodles & Seafood Starters",
-                    description: "A tantalizing blend of noodles stir-fried with succulent seafood like prawns, and fish. The dish is cooked with a variety of spices that create a balance of heat, sweetness, and saltiness. The seafood provides a burst of flavor with every bite, while the noodles have a satisfying crunch. This dish is an explosion of textures and flavors, perfect as a starter or a snack.",
-                    link: "images/menu/nonveg_noodles_sea_food_starters.jpeg",
-                    type: "Non-Veg",
-                },
-                seafood_main_rice_noodles: {
-                    title: "Seafood Main Rice & Noodles",
-                    description: "A hearty, savory blend of rice and noodles packed with fresh seafood like prawns, fish. The dish is cooked in exotic spices and sauces, adding layers of flavor with each bite. The rice is perfectly cooked, and the noodles are stir-fried to achieve a delightful texture. The combination of rice, noodles, and seafood makes for a filling and satisfying main course that’s sure to please any seafood lover.",
-                    link: "images/menu/seafood_main_rice_noodles.jpeg",
-                    type: "Non-Veg",
-                },
-                veg_soup_starters: {
-                    title: "Veg Soup Starters",
-                    description: "A healthy and aromatic vegetable-based soup, made with a selection of fresh, seasonal vegetables like carrots, beans, and peas. The broth is rich and flavorful, created by simmering the vegetables with herbs and light spices. This soup offers a refreshing and light start to your meal, with just the right amount of seasoning to awaken your palate. Perfect for vegetarians or anyone looking for a nourishing, guilt-free option.",
-                    link: "images/menu/veg_soup_starters.jpeg",
-                    type: "Veg",
-                },
-                veg_rice_noodles: {
-                    title: "Veg Rice & Noodles",
-                    description: "A comforting vegetarian dish that features a blend of rice and noodles, stir-fried with an assortment of fresh vegetables like bell peppers, broccoli, and mushrooms. The dish is lightly seasoned with soy sauce and garlic, offering a delicious balance of savory flavors. It’s a wholesome and satisfying meal, perfect for those who want a flavorful vegetarian option without compromising on taste.",
-                    link: "images/menu/veg_rice_noodles.jpeg",
-                    type: "Veg",
-                },
-                papad_roti_desserts: {
-                    title: "Papad, Roti & Desserts",
-                    description: "A delightful end to your meal with crispy papad, soft, warm roti, and a selection of delectable desserts. The papad adds a satisfying crunch, while the roti is light and fluffy, perfect for scooping up rich gravies. For dessert, indulge in a variety of sweet treats like gulab jamun, kheer, and more. This combination of savory and sweet items provides the perfect finale to your meal.",
-                    link: "images/menu/papad_roti_desserts.jpeg",
-                    type: "Veg",
-                },
-            };
-
-            function updateMenuContent(menuKey) {
-            const menuContent = document.getElementById("menu-content");
-            const selectedItem = menuData[menuKey];
-            let vegIcon = "";
-            let nonVegIcon = "";
-
-            // Determine the icons based on the item type
-            if (selectedItem.type.includes("Veg")) {
-                vegIcon = '<img src="images/veg-icon.png" alt="Veg" class="menu-icon">'; // path to the green circle image
-            }
-            if (selectedItem.type.includes("Non-Veg")) {
-                nonVegIcon = '<img src="images/non-veg-icon.png" alt="Non-Veg" class="menu-icon">'; // path to the red circle image
-            }
-
-            menuContent.innerHTML = `
-                <div class="menu-item-container">
-                    <h3 class="menu-title">${selectedItem.title}</h3>
-                    <div class="menu-icons">
-                        ${vegIcon} ${nonVegIcon}
+    <meta name="keywords" content="​Address and Hours, book your table">
+    <meta name="description" content="">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/nicepage.css" media="screen">
+<link rel="stylesheet" href="css/Menu.css" media="screen">
+    <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Bebas+Neue:400">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/logo.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Menu">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="true" class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-85b2"><div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="360" data-image-height="168">
+          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-2-base u-white" href="./" style="padding: 10px 39px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-2-base u-white" href="Menu.html" style="padding: 10px 39px;">Menu</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-2-base u-white" href="Contact.html" style="padding: 10px 39px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-hover-palette-2-base u-white" href="About.html" style="padding: 10px 39px;">About</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Menu.html">Menu</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-image u-section-1" id="sec-68c8" data-image-width="1835" data-image-height="1080">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-container-style u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h3 class="u-custom-font u-text u-text-custom-color-1 u-text-1">Our Offerings</h3>
+            <div class="custom-expanded u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-width-image u-gallery-1">
+              <div class="u-gallery-inner"><div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-1" data-image-width="2126" data-image-height="3778"><div class="u-back-slide" data-image-width="5184" data-image-height="3456"><img class="u-back-image" src="images/irakli-kvaratskhelia-okLhhXJlFaA-unsplash.jpg" alt="Succulent Chicken &amp;amp; Mutton Kebabs">
+</div><div class="u-over-slide u-shading u-valign-bottom u-over-slide-1"><h3 class="u-gallery-heading">Succulent Chicken &amp; Mutton Kebabs</h3><p class="u-gallery-text" style="margin-top: 20px;">Delight in the smoky, tender perfection of our chicken and mutton kebabs, expertly marinated in a blend of aromatic spices and herbs. Grilled to perfection, each skewer is packed with juicy, flavorful meat that melts in your mouth. Served with a side of tangy mint chutney and a refreshing salad, our kebabs are perfect for those craving bold, savory flavors.</p>
+</div>
+</div><div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-2"><div class="u-back-slide" data-image-width="5000" data-image-height="5000"><img class="u-back-image" src="images/rimsha-noor-1RE1sDbR4Go-unsplash.jpg" alt="Grilled Bites">
+</div><div class="u-over-slide u-shading u-valign-bottom u-over-slide-2"><h3 class="u-gallery-heading">Grilled Bites</h3><p class="u-gallery-text" style="margin-top: 20px;">Succulent pieces of chicken, lamb marinated with aromatic spices, herbs, and a touch of lemon juice. Grilled to perfection over a charcoal flame, these tender morsels are crispy on the outside and juicy on the inside. A true delight for meat lovers, offering a smoky flavor that’s irresistible with every bite. Served with a side of tangy dipping sauce and a fresh garnish of cilantro</p>
+</div>
+</div><div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-3" data-image-width="3024" data-image-height="4032"><div class="u-back-slide"><img class="u-back-image" src="images/vinitha-v-jNpqnauKLJw-unsplash.jpg" alt="Tawa Fishes">
+</div><div class="u-over-slide u-shading u-valign-bottom u-over-slide-3"><h3 class="u-gallery-heading">Tawa Fishes</h3><p class="u-gallery-text" style="margin-top: 20px;">Whether grilled, fried, or cooked in a flavorful sauce, each dish is crafted to highlight the natural taste of the fish. Served with vibrant sides and sauces that complement the delicate flavors of the sea, these dishes offer a perfect balance of health and taste.<br>
+</p>
+</div>
+</div><div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-4" data-image-width="3751" data-image-height="4689"><div class="u-back-slide"><img class="u-back-image" src="images/odiseo-castrejon-1SPu0KT-Ejg-unsplash.jpg" alt="Vegetarian Delights">
+</div><div class="u-over-slide u-shading u-valign-bottom u-over-slide-4"><h3 class="u-gallery-heading">Vegetarian Delights</h3><p class="u-gallery-text" style="margin-top: 20px;">For those who prefer plant-based dishes, our vegetarian menu offers a variety of wholesome and flavorful options. From vibrant curries to grilled vegetables and hearty platters, each dish is crafted with the freshest ingredients and aromatic spices. </p>
+</div>
+</div><div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-5" data-image-width="6000" data-image-height="4000"><div class="u-back-slide"><img class="u-back-image" src="images/kostiantyn-vierkieiev-CWUpnRTlXB0-unsplash.jpg" alt="Crispy Fried Fish Delights">
+</div><div class="u-over-slide u-shading u-valign-bottom u-over-slide-5"><h3 class="u-gallery-heading">Crispy Fried Fish Delights</h3><p class="u-gallery-text" style="margin-top: 20px;">Indulge in our crispy fried fish, perfectly battered and fried to a golden crisp. Each bite delivers a satisfying crunch followed by tender, flaky fish that's cooked to perfection. Paired with a tangy dipping sauce and a side of fresh salad or fries, these fried fish dishes are a comforting, flavorful choice for any seafood lover. </p>
+</div>
+</div></div>
+              <a class="u-gallery-nav u-gallery-nav-prev u-icon-circle u-opacity u-opacity-70 u-palette-3-base u-spacing-10 u-text-black u-gallery-nav-1" href="#" role="button">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                </span>
+                <span class="sr-only">
+                  <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                </span>
+              </a>
+              <a class="u-gallery-nav u-gallery-nav-next u-icon-circle u-opacity u-opacity-70 u-palette-3-base u-spacing-10 u-text-black u-gallery-nav-2" href="#" role="button">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                </span>
+                <span class="sr-only">
+                  <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                </span>
+              </a>
+            </div>
+            <h3 class="u-custom-font u-text u-text-custom-color-1 u-text-2">Download our Full menu</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-image u-section-2" id="sec-ff4f" data-image-width="1528" data-image-height="1080">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-align-left u-custom-font u-text u-text-body-alt-color u-text-1">
+                    <span class="u-text-custom-color-1">book</span> your table
+                  </h2>
+                </div>
+              </div>
+              <div class="u-container-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <div class="u-container-align-center u-container-style u-custom-color-1 u-group u-shape-circle u-group-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-3">
+                      <span class="u-file-icon u-icon u-icon-1">
+                        <img src="images/483947.png" alt="">
+                      </span>
+                      <h5 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-2">call us</h5>
                     </div>
+                  </div>
                 </div>
-                <p>${selectedItem.description}</p>
-                <p>${selectedItem.type}</p>
-                <br>
-                <a href="${selectedItem.link}" download class="download-link">Download ${selectedItem.title}</a>
-            `;
-        }
-
-
-
-
-            // Handle click on menu items
-            document.querySelectorAll(".menu-item").forEach((item) => {
-                item.addEventListener("click", function () {
-                    // Remove active class from all menu items
-                    document.querySelectorAll(".menu-item").forEach((menuItem) => {
-                        menuItem.classList.remove("active");
-                    });
-
-                    // Add active class to the clicked item
-                    this.classList.add("active");
-
-                    // Get the data-target attribute value and update the content
-                    const menuKey = this.getAttribute("data-target");
-                    updateMenuContent(menuKey);
-                });
-            });
-
-            // Initial setup: Display content for the first item (Grilled Bites) on page load
-            updateMenuContent("grilledbites");
-        });
-
-
-    </script>
-</head>
-
-<body>
-    <header class="header">
-        <!-- Menu -->
-        <div class="container">
-            <nav class="menu">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-    <br>
-    <div class="info-section">
-        <div class="container">
-            <div class="address">
-                <p><i class="fa fa-map-marker-alt"></i> Ground Floor, Ostwal Orbit Kanakia, Mira Bhayandar Rd, Mira Road
-                    East,
-                    Thane, Maharashtra 401107</p>
+        <div class="u-expanded-width u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="name-0935" class="u-label u-text-body-alt-color">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-0935" name="name" class="u-border-none u-grey-5 u-input u-input-rectangle" required="">
             </div>
-            <div class="logo">
-                <img src="images/logo.png" alt="Bombay Tawa & Grill Logo">
+            <div class="u-form-group u-form-phone">
+              <label for="email-0935" class="u-label u-text-body-alt-color">Mobile Number</label>
+              <input type="tel" placeholder="081234 567" id="email-0935" name="tel" class="u-border-none u-grey-5 u-input u-input-rectangle" required="required" data-country-code="in">
             </div>
-            <div class="reservation">
-                <p><i class="fa fa-phone"></i>9324856960</p>
-                <p><i class="fa fa-phone"></i>9137115338</p>
-
+            <div class="u-form-group u-form-message">
+              <label for="message-0935" class="u-label u-text-body-alt-color">Message</label>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0935" name="message" class="u-border-none u-grey-5 u-input u-input-rectangle" required=""></textarea>
             </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="ec96d542-4a2d-3b13-9075-33637529ef47">
+          </form>
         </div>
-    </div>
-
-    <section class="menu-section">
-        <div class="container">
-            <div class="menu-container">
-                <!-- Sidebar Menu -->
-                <div class="menu-sidebar">
-                    <ul id="menu-items">
-                        <li class="menu-item active" data-target="grilledbites">Grilled Bites</li>
-                        <li class="menu-item" data-target="fry_pan_treat_tawa_special">Fry Pan Treat Tawa Special</li>
-                        <li class="menu-item" data-target="chicken_mutton_gravy">Chicken & Mutton Gravy</li>
-                        <li class="menu-item" data-target="fish_veg_pulao">Fish & Veg Pulao</li>
-                        <li class="menu-item" data-target="non_veg_soup_starters">Non-Veg Soup Starters</li>
-                        <li class="menu-item" data-target="main_cource_chinese_rice">Main Course: Chinese Rice</li>
-                        <li class="menu-item" data-target="nonveg_noodles_sea_food_starters">Non-Veg Noodles & Seafood
-                            Starters</li>
-                        <li class="menu-item" data-target="seafood_main_rice_noodles">Seafood Main Rice & Noodles</li>
-                        <li class="menu-item" data-target="veg_soup_starters">Veg Soup Starters</li>
-                        <li class="menu-item" data-target="veg_rice_noodles">Veg Rice & Noodles</li>
-                        <li class="menu-item" data-target="papad_roti_desserts">Papad, Roti & Desserts</li>
-                    </ul>
-                </div>
-
-                <!-- Menu Content -->
-                <div class="menu-content" id="menu-content">
-                    <!-- Content for grilledbites (default on page load) -->
-                    <h3>Grilled Bites</h3>
-                    <p>Succulent pieces of meat marinated with aromatic spices and grilled
-                        to perfection. A true delight for meat lovers.</p>
-                    <p>Non-Veg</p>
-                    <a href="images/menu/grilledbites.jpeg" download class="download-link">Download Grilled Bites</a>
-                </div>
-            </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-df9e"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="">
+            <span class="u-icon u-social-facebook u-social-icon u-icon-1">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-3290"></use></svg>
+              <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-3290"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href="">
+            <span class="u-icon u-social-icon u-social-twitter u-icon-2">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-fa21"></use></svg>
+              <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-fa21"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+      c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+      c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+      c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+      c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="">
+            <span class="u-icon u-social-icon u-social-instagram u-icon-3">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-c17e"></use></svg>
+              <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-c17e"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" title="linkedin" target="_blank" href="">
+            <span class="u-icon u-social-icon u-social-linkedin u-icon-4">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-a143"></use></svg>
+              <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a143"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg>
+            </span>
+          </a>
         </div>
-    </section>
-
-    <section class="best-dishes">
-        <div class="container">
-            <img src="images/best-dishes-header.png">
-            <div class="dish-cards">
-                <div class="dish-card" style="background-image: url('images/page5_img1.jpg');">
-                    <h3>TANDOORI KEBABS</h3>
-                    <p>Freshly grilled with the perfect blend of spices.</p>
-                </div>
-                <div class="dish-card" style="background-image: url('images/big8.jpg');">
-                    <h3>FAMILY PLATTERS</h3>
-                    <p>Big portions for your special gatherings.</p>
-                </div>
-                <div class="dish-card" style="background-image: url('images/page1_img1.jpg');">
-                    <h3>VEG & NON-VEG</h3>
-                    <p>A wide selection to satisfy every craving.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div id="testimonial-container"></div>
-    </section>
-
-
-    <!-- Download Menu Section -->
-    <section class="download-menu">
-        <h2>Check Out Our Menu</h2>
-        <p>Download the full menu to see all our delicious offerings.</p>
-        <a href="menu.pdf" class="download-link" download>Download Menu</a>
-    </section>
-</body>
-
-</html>
+      </div></footer>
+</body></html>
