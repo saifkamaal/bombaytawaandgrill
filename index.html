@@ -26,12 +26,18 @@
 }</script>
 <script>
 
-function redirectToThankYouPage() {
-    // Delay to ensure the form submission is complete
-    setTimeout(() => {
-      window.location.href = "thank-you-page.html";
-    }, 500); // Adjust delay as needed
-    return true; // Allow the form to submit
+function submitForm() {
+    // Get the form element
+    var form = document.getElementById('googleForm');
+    
+    // Submit the form data using the iframe
+    form.target = 'hidden_iframe'; // Ensure submission goes to hidden iframe
+    form.submit(); // Submit the form
+
+    // Redirect to the thank you page after a short delay
+    setTimeout(function() {
+      window.location.href = "thank-you-page.html"; // Change to your thank you page URL
+    }, 500); // Adjust delay if needed
   }
 
   const testimonials = [
@@ -196,13 +202,19 @@ function redirectToThankYouPage() {
         </div>
         <div class="u-expanded-width u-form u-form-1">
           <form 
+          id="googleForm"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo0szZYpzDU8ALI_3dsCSSrdEEe6D6h2BoNvUisaHvW8ozng/formResponse" 
             method="POST" 
             target="hidden_iframe"
-            onsubmit="redirectToThankYouPage()"
             class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" 
             style="padding: 10px;"
           >
+          <input 
+          type="hidden" 
+          name="entry.1181415660" 
+          value="Book"
+        >
+
             <div class="u-form-group u-form-name">
               <label for="name-0935" class="u-label u-text-body-alt-color">Name</label>
               <!-- Map name to entry.2005620554 -->
@@ -242,11 +254,12 @@ function redirectToThankYouPage() {
             </div>
             <div class="u-align-left u-form-group u-form-submit">
               <button 
-                type="submit" 
-                class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1"
-              >
-                Submit
-              </button>
+              type="button" 
+              class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1" 
+              onclick="submitForm()"
+            >
+              Submit
+            </button>
             </div>
 
           </form>
