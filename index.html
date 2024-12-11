@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1KK1Y3BTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C1KK1Y3BTT');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bombay Tawa and Grill</title>
@@ -48,48 +57,48 @@
     });
 
     // Array of testimonials
-const testimonials = [
-  { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
-  { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
-  { text: "A cozy atmosphere and delicious dishes!", author: "Amina M." },
-  { text: "Highly recommended for foodies.", author: "Karan T." },
-  { text: "Authentic flavors that remind me of home.", author: "Mohtashim P." },
-  { text: "A must-visit for every food lover!", author: "Rohan D." },
-  { text: "The service was exceptional and the food divine.", author: "Nisha V." },
-  { text: "Loved the presentation and taste!", author: "Sami G." },
-  { text: "Affordable yet premium dining experience.", author: "Manoj K." },
-  { text: "The desserts are a hidden gem!", author: "Sneha J." },
-  { text: "Never disappoints, every visit is delightful.", author: "Arjun L." },
-  { text: "Perfect place for family dinners.", author: "Meena R." },
-  { text: "Exceptional quality and hospitality.", author: "Saif K." },
-  { text: "Tandoori platters are a must-try.", author: "Ishita S." },
-  { text: "Great place for group celebrations.", author: "Arham N." }
-];
+    const testimonials = [
+      { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
+      { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
+      { text: "A cozy atmosphere and delicious dishes!", author: "Amina M." },
+      { text: "Highly recommended for foodies.", author: "Karan T." },
+      { text: "Authentic flavors that remind me of home.", author: "Mohtashim P." },
+      { text: "A must-visit for every food lover!", author: "Rohan D." },
+      { text: "The service was exceptional and the food divine.", author: "Nisha V." },
+      { text: "Loved the presentation and taste!", author: "Sami G." },
+      { text: "Affordable yet premium dining experience.", author: "Manoj K." },
+      { text: "The desserts are a hidden gem!", author: "Sneha J." },
+      { text: "Never disappoints, every visit is delightful.", author: "Arjun L." },
+      { text: "Perfect place for family dinners.", author: "Meena R." },
+      { text: "Exceptional quality and hospitality.", author: "Saif K." },
+      { text: "Tandoori platters are a must-try.", author: "Ishita S." },
+      { text: "Great place for group celebrations.", author: "Arham N." }
+    ];
 
-// Function to select random testimonials
-function getRandomTestimonials(array, count) {
-  const shuffled = array.sort(() => 0.5 - Math.random()); // Shuffle array
-  return shuffled.slice(0, count); // Return the first `count` items
-}
+    // Function to select random testimonials
+    function getRandomTestimonials(array, count) {
+      const shuffled = array.sort(() => 0.5 - Math.random()); // Shuffle array
+      return shuffled.slice(0, count); // Return the first `count` items
+    }
 
-// Insert testimonials into the DOM
-function displayTestimonials() {
-  const container = document.getElementById("testimonial-container");
-  container.innerHTML = ""; 
-  const selectedTestimonials = getRandomTestimonials(testimonials, 3);
-  selectedTestimonials.forEach(({ text, author }) => {
-    const testimonialElement = document.createElement("p");
-    testimonialElement.classList.add("testimonial");
-    testimonialElement.innerHTML = `"${text}" - <span>${author}</span>`;
-    container.appendChild(testimonialElement);
-  });
-}
+    // Insert testimonials into the DOM
+    function displayTestimonials() {
+      const container = document.getElementById("testimonial-container");
+      container.innerHTML = "";
+      const selectedTestimonials = getRandomTestimonials(testimonials, 3);
+      selectedTestimonials.forEach(({ text, author }) => {
+        const testimonialElement = document.createElement("p");
+        testimonialElement.classList.add("testimonial");
+        testimonialElement.innerHTML = `"${text}" - <span>${author}</span>`;
+        container.appendChild(testimonialElement);
+      });
+    }
 
-// Load testimonials on page load
-document.addEventListener("DOMContentLoaded", () => {
-  displayTestimonials(); // Initial display
-  setInterval(displayTestimonials, 5000); // Update every 5 seconds
-});
+    // Load testimonials on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      displayTestimonials(); // Initial display
+      setInterval(displayTestimonials, 5000); // Update every 5 seconds
+    });
 
 
   </script>
@@ -144,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <section class="best-dishes">
     <div class="container">
-      <img src="images/best-dishes-header.png">
+      <img src="images/best-dishes-header.png" style="padding-bottom: 10px;">
       <div class="dish-cards">
         <div class="dish-card" style="background-image: url('images/page5_img1.jpg');">
           <h3>TANDOORI KEBABS</h3>
@@ -167,12 +176,17 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="testimonial-container"></div>
   </section>
 
-    <section class="download-menu">
+  <section class="download-menu">
     <h2>Check Out Our Menu</h2>
     <p>Download the full menu to see all our delicious offerings.</p>
     <a href="menu.pdf" class="download-link" download>Download Menu</a>
   </section>
-  
+
+  <div class="mobile-only">
+    <div class="address">Address Details</div>
+    <div class="reservation">Reservation Details</div>
+  </div>
+
 </body>
 
 </html>

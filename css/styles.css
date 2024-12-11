@@ -491,5 +491,23 @@ html, body {
 }
 
 
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .info-section .address,
+  .info-section .reservation {
+      display: none;
+  }
+
+  .mobile-only {
+      display: none;
+  }
+}
+
+
+
+
 
 
