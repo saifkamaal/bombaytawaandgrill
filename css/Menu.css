@@ -9,26 +9,26 @@
 
 .u-section-1 .u-group-1 {
   width: 634px;
-  min-height: 954px;
+  min-height: 813px;
   height: auto;
-  margin: -2px auto 38px 1px;
+  margin: 139px auto 38px 1px;
 }
 
 .u-section-1 .u-container-layout-1 {
-  padding: 28px 0;
+  padding: 0 0 28px;
 }
 
 .u-section-1 .u-text-1 {
   font-size: 2.25rem;
   font-weight: 700;
   font-family: "Bebas Neue";
-  margin: 119px 29px 0 125px;
+  margin: 33px 29px 0 124px;
 }
 
 .u-section-1 .u-gallery-1 {
   height: 471px;
   width: 1140px;
-  margin: 58px -629px 0 auto;
+  margin: 21px -629px 0 auto;
 }
 
 .u-section-1 .u-gallery-item-1 {
@@ -103,7 +103,7 @@
   font-size: 2.25rem;
   font-weight: 700;
   font-family: "Bebas Neue";
-  margin: 125px 30px 0 124px;
+  margin: 81px 30px 0 124px;
 }
 
 @media (max-width: 1199px) {
@@ -138,7 +138,7 @@
 
   .u-section-1 .u-text-1 {
     margin-right: 0;
-    margin-left: 60px;
+    margin-left: 59px;
   }
 
   .u-section-1 .u-text-2 {
