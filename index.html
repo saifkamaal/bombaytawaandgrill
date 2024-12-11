@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/nicepage.css" media="screen">
   <link rel="stylesheet" href="css/index.css" media="screen">
   <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
   <meta name="referrer" content="origin">
   <link rel="icon" href="images/favicon.jpg">
   <link id="u-theme-google-font" rel="stylesheet"
@@ -29,15 +30,6 @@
 		"sameAs": []
 }</script>
   <script>
-
-    function redirectToThankYouPage() {
-      // Delay to ensure the form submission is complete
-      setTimeout(() => {
-        window.location.href = "thank-you-page.html";
-      }, 500); // Adjust delay as needed
-      return true; // Allow the form to submit
-    }
-
     const testimonials = [
       { text: "The best kebabs in town! Absolutely loved it.", author: "Junaid S." },
       { text: "Perfect family restaurant with amazing food.", author: "Priya K." },
@@ -81,6 +73,13 @@
       setInterval(displayTestimonials, 5000);
     });
 
+    function redirectToThankYouPage() {
+      // Delay to ensure the form submission is complete
+      setTimeout(() => {
+        window.location.href = "thank-you-page.html";
+      }, 500); // Adjust delay as needed
+      return true; // Allow the form to submit
+    }
 
   </script>
   <meta name="theme-color" content="#478ac9">
