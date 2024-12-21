@@ -30,16 +30,69 @@
   <script>
 
   function submitForm() {
-      var form = document.getElementById('googleForm');
-      
-      
-      form.target = 'hidden_iframe'; 
-      form.submit(); 
 
-      setTimeout(function() {
-        window.location.href = "thank-you-page.html"; 
-      }, 500); 
+    const mobileField = document.getElementById('email-0935').value;
+
+    const indianMobileRegex = /^[6-9]\d{9}$/; // Indian mobile number regex
+    if (!indianMobileRegex.test(mobileField)) {
+      alert('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.');
+      return;
     }
+
+    // Get the date and time fields
+    const dateField = document.getElementById('date-71db').value;
+    const timeField = document.getElementById('time-6482').value;
+
+    // Ensure fields are filled before submitting
+    if (!dateField || !timeField) {
+      alert('Please fill out the date and time fields.');
+      return;
+    }
+
+      // Combine date and time into a single Date object
+    const selectedDateTime = new Date(`${dateField}T${timeField}`);
+    const currentDateTime = new Date();
+
+    // Validate if the selected date and time are in the future
+    if (selectedDateTime <= currentDateTime) {
+      alert('Please select a date and time that is in the future.');
+      return;
+    }
+
+    // Split the date into year, month, and day
+    const [year, month, day] = dateField.split('-');
+
+    // Split the time into hours and minutes
+    const [hour, minute] = timeField.split(':');
+
+    // Set the hidden fields with the split values
+    document.getElementById('hidden-year').value = year;
+    document.getElementById('hidden-month').value = month;
+    document.getElementById('hidden-day').value = day;
+    document.getElementById('hidden-hour').value = hour;
+    document.getElementById('hidden-minute').value = minute;
+
+    // Submit the form to the hidden iframe
+    const form = document.getElementById('googleForm');
+    form.target = 'hidden_iframe'; 
+    form.submit();
+
+    // Display a success message
+  const messageContainer = document.getElementById('success-message');
+  messageContainer.innerHTML = `
+    <div class="success-message">
+      <h2>Thank you for your reservation!</h2>
+      <p>We have received your details and will get back to you shortly.</p>
+    </div>
+  `;
+
+  // Clear the form fields
+  form.reset();
+
+  // Scroll to the success message (optional)
+  messageContainer.scrollIntoView({ behavior: 'smooth' });
+  }
+
 
 
     function gdprConfirmed() {
@@ -154,23 +207,44 @@
           style="padding: 10px;">
             <div class="u-form-group u-form-name">
               <label for="name-0935" class="u-label u-text-body-alt-color">Name</label>
-              <input type="text" placeholder="Enter your Name" id="name-0935" name="name" class="u-border-none u-grey-5 u-input u-input-rectangle" required="">
+              <input type="text" placeholder="Enter your Name" id="name-0935" class="u-border-none u-grey-5 u-input u-input-rectangle"
+              name="entry.2005620554" required="required">
             </div>
             <div class="u-form-group u-form-phone">
               <label for="email-0935" class="u-label u-text-body-alt-color">Mobile Number</label>
-              <input type="tel" placeholder="081234 56789" id="email-0935" name="tel" class="u-border-none u-grey-5 u-input u-input-rectangle" required="required" data-country-code="in">
+              <input type="tel" placeholder="081234 56789" id="email-0935" class="u-border-none u-grey-5 u-input u-input-rectangle" 
+              name="entry.1166974658" 
+              required="required" data-country-code="in">
             </div>
-            <div class="u-form-date u-form-group u-form-group-3">
+            <div class="u-form-group u-form-date">
               <label for="date-71db" class="u-label u-text-body-alt-color">Reservation Date</label>
-              <input type="text" placeholder="DD/MM/YYYY" id="date-71db" name="date" class="u-border-none u-grey-5 u-input u-input-rectangle" required="" data-date-format="dd/mm/yyyy">
+              <input 
+                type="date" 
+                id="date-71db" 
+                class="u-border-none u-grey-5 u-input u-input-rectangle" 
+                required="required"
+              >
+              <!-- Hidden inputs to split date into year, month, and day -->
+              <input type="hidden" name="entry.1181415660_year" id="hidden-year">
+              <input type="hidden" name="entry.1181415660_month" id="hidden-month">
+              <input type="hidden" name="entry.1181415660_day" id="hidden-day">
             </div>
-            <div class="u-form-group u-form-time u-form-group-4">
-              <label for="time-6482" class="u-label u-text-body-alt-color">ReservationTime</label>
-              <input type="time" id="time-6482" name="time" class="u-border-none u-grey-5 u-input u-input-rectangle">
+          
+            <div class="u-form-group u-form-time">
+              <label for="time-6482" class="u-label u-text-body-alt-color">Reservation Time</label>
+              <input 
+                type="time" 
+                id="time-6482" 
+                class="u-border-none u-grey-5 u-input u-input-rectangle"
+              >
+              <!-- Hidden inputs to split time into hours and minutes -->
+              <input type="hidden" name="entry.1478081009_hour" id="hidden-hour">
+              <input type="hidden" name="entry.1478081009_minute" id="hidden-minute">
             </div>
             <div class="u-form-group u-form-message">
               <label for="message-0935" class="u-label u-text-body-alt-color">Message</label>
-              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0935" name="message" class="u-border-none u-grey-5 u-input u-input-rectangle" required=""></textarea>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0935" name="entry.839337160" class="u-border-none u-grey-5 u-input u-input-rectangle"  
+              required=""></textarea>
             </div>
             <div class="u-align-left u-form-group u-form-submit">
               <button 
@@ -180,9 +254,9 @@
             >
               Submit
             </button>
-
           </form>
         </div>
+        <div id="success-message"></div>
       </div>
     </section>
     
