@@ -28,6 +28,70 @@
     <meta property="og:description" content="Indian restaurant near me, family-friendly Indian restaurant, best Indian food for families, Indian cuisine restaurant, authentic Indian food near me, tawa dishes near me, tawa chicken, tawa fish, tawa paneer, tawa kebabs, tawa biryani, Indian tawa recipes, tawa mutton, grilled Indian food, Indian BBQ restaurant, tandoori grill dishes, grilled chicken Indian style, grilled fish Indian style, Indian grilled lamb, Indian vegetarian grill, tikka grill near me, family Indian dining, kids-friendly Indian restaurant, group dining Indian food, Indian restaurant for large families, best family restaurant near me, North Indian cuisine near me, South Indian specialties, Mughlai dishes near me, street food style tawa dishes, Indo-Chinese grill, Indian restaurant in Mira Road, best Indian tawa grill in Mira Road], top family restaurant in Mira Road, Indian fish specialties, veg and non-veg Indian dishes, tawa and grill platter, Indian curry and grill combo, tawa paratha and curry, signature tawa dishes, casual Indian dining for families, cozy Indian restaurant, Indian food with live grill experience, affordable Indian dining, juicy grilled kebabs, spicy tawa fish curry, smoky tandoori chicken, crispy grilled paneer, fluffy naan and grilled meat, Bombay tawa, bombay tawa grill, bombay tawa and grill">
     <meta property="og:type" content="website">
   <script>
+
+  function submitForm() {
+
+  const mobileField = document.getElementById('email-0935').value;
+
+  const indianMobileRegex = /^[6-9]\d{9}$/; // Indian mobile number regex
+  if (!indianMobileRegex.test(mobileField)) {
+    alert('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.');
+    return;
+  }
+
+  // Get the date and time fields
+  const dateField = document.getElementById('date-71db').value;
+  const timeField = document.getElementById('time-6482').value;
+
+  // Ensure fields are filled before submitting
+  if (!dateField || !timeField) {
+    alert('Please fill out the date and time fields.');
+    return;
+  }
+
+    // Combine date and time into a single Date object
+  const selectedDateTime = new Date(`${dateField}T${timeField}`);
+  const currentDateTime = new Date();
+
+  // Validate if the selected date and time are in the future
+  if (selectedDateTime <= currentDateTime) {
+    alert('Please select a date and time that is in the future.');
+    return;
+  }
+
+  // Split the date into year, month, and day
+  const [year, month, day] = dateField.split('-');
+
+  // Split the time into hours and minutes
+  const [hour, minute] = timeField.split(':');
+
+  // Set the hidden fields with the split values
+  document.getElementById('hidden-year').value = year;
+  document.getElementById('hidden-month').value = month;
+  document.getElementById('hidden-day').value = day;
+  document.getElementById('hidden-hour').value = hour;
+  document.getElementById('hidden-minute').value = minute;
+
+  // Submit the form to the hidden iframe
+  const form = document.getElementById('googleForm');
+  form.target = 'hidden_iframe'; 
+  form.submit();
+
+  // Display a success message
+  const messageContainer = document.getElementById('success-message');
+  messageContainer.innerHTML = `
+  <div class="success-message">
+    <h2>Thank you for your reservation!</h2>
+    <p>We have received your details and will get back to you shortly.</p>
+  </div>
+  `;
+
+  // Clear the form fields
+  form.reset();
+
+  // Scroll to the success message (optional)
+  messageContainer.scrollIntoView({ behavior: 'smooth' });
+  }
     function gdprConfirmed() {
         return true;
     }
@@ -175,37 +239,64 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
           </div>
         </div>
         <div class="u-expanded-width u-form u-form-1">
-          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+          <form   id="googleForm"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo0szZYpzDU8ALI_3dsCSSrdEEe6D6h2BoNvUisaHvW8ozng/formResponse" 
+          method="POST" 
+          target="hidden_iframe"
+          class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" 
+          style="padding: 10px;">
             <div class="u-form-group u-form-name">
               <label for="name-0935" class="u-label u-text-body-alt-color">Name</label>
-              <input type="text" placeholder="Enter your Name" id="name-0935" name="name" class="u-border-none u-grey-5 u-input u-input-rectangle" required="">
+              <input type="text" placeholder="Enter your Name" id="name-0935" class="u-border-none u-grey-5 u-input u-input-rectangle"
+              name="entry.2005620554" required="required">
             </div>
             <div class="u-form-group u-form-phone">
               <label for="email-0935" class="u-label u-text-body-alt-color">Mobile Number</label>
-              <input type="tel" placeholder="081234 56789" id="email-0935" name="tel" class="u-border-none u-grey-5 u-input u-input-rectangle" required="required" data-country-code="in">
+              <input type="tel" placeholder="081234 56789" id="email-0935" class="u-border-none u-grey-5 u-input u-input-rectangle" 
+              name="entry.1166974658" 
+              required="required" data-country-code="in">
             </div>
-            <div class="u-form-date u-form-group u-form-group-3">
-              <label for="date-71db" class="u-label u-text-body-alt-color">Date</label>
-              <input type="text" placeholder="DD/MM/YYYY" id="date-71db" name="date" class="u-border-none u-grey-5 u-input u-input-rectangle" required="" data-date-format="dd/mm/yyyy">
+            <div class="u-form-group u-form-date">
+              <label for="date-71db" class="u-label u-text-body-alt-color">Reservation Date</label>
+              <input 
+                type="date" 
+                id="date-71db" 
+                class="u-border-none u-grey-5 u-input u-input-rectangle" 
+                required="required"
+              >
+              <!-- Hidden inputs to split date into year, month, and day -->
+              <input type="hidden" name="entry.1181415660_year" id="hidden-year">
+              <input type="hidden" name="entry.1181415660_month" id="hidden-month">
+              <input type="hidden" name="entry.1181415660_day" id="hidden-day">
             </div>
-            <div class="u-form-group u-form-time u-form-group-4">
-              <label for="time-6482" class="u-label u-text-body-alt-color">Time</label>
-              <input type="time" id="time-6482" name="time" class="u-border-none u-grey-5 u-input u-input-rectangle">
+          
+            <div class="u-form-group u-form-time">
+              <label for="time-6482" class="u-label u-text-body-alt-color">Reservation Time</label>
+              <input 
+                type="time" 
+                id="time-6482" 
+                class="u-border-none u-grey-5 u-input u-input-rectangle"
+              >
+              <!-- Hidden inputs to split time into hours and minutes -->
+              <input type="hidden" name="entry.1478081009_hour" id="hidden-hour">
+              <input type="hidden" name="entry.1478081009_minute" id="hidden-minute">
             </div>
             <div class="u-form-group u-form-message">
               <label for="message-0935" class="u-label u-text-body-alt-color">Message</label>
-              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0935" name="message" class="u-border-none u-grey-5 u-input u-input-rectangle" required=""></textarea>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-0935" name="entry.839337160" class="u-border-none u-grey-5 u-input u-input-rectangle"  
+              required=""></textarea>
             </div>
             <div class="u-align-left u-form-group u-form-submit">
-              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-2 u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-            <input type="hidden" name="formServices" value="ec96d542-4a2d-3b13-9075-33637529ef47">
+              <button 
+              type="button" 
+              class="u-btn u-btn-submit u-button-style u-custom-color-2 u-btn-1" 
+              onclick="submitForm()"
+            >
+              Submit
+            </button>
           </form>
         </div>
+        <div id="success-message"></div>
       </div>
     </section>
     
