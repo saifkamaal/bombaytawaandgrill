@@ -1,0 +1,1915 @@
+[
+  {
+    "category": "Grilled Bites",
+    "items": [
+      {
+        "name": "Bombay Spl. Platter",
+        "description": "A special platter featuring a variety of grilled meats and seafood, showcasing the best of Bombay's tandoori cuisine.",
+        "halfPrice": "",
+        "fullPrice": "1850",
+        "type": "non-veg"
+      },
+      {
+        "name": "Tikka Platter",
+        "description": "An assortment of succulent tikka preparations, marinated in aromatic spices and grilled to perfection.",
+        "halfPrice": "",
+        "fullPrice": "960",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bombay Spl. Tandoori",
+        "description": "Our signature tandoori chicken, marinated in a special blend of spices and cooked in a traditional clay oven.",
+        "halfPrice": "280",
+        "fullPrice": "540",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Tandoori",
+        "description": "Tandoori chicken with a fiery Schezwan twist, combining the best of Indian and Chinese flavors.",
+        "halfPrice": "260",
+        "fullPrice": "480",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Tandoori",
+        "description": "Classic tandoori chicken, marinated in yogurt and a medley of spices, a timeless favorite.",
+        "halfPrice": "210",
+        "fullPrice": "390",
+        "type": "non-veg"
+      },
+      {
+        "name": "Lemon Tandoori",
+        "description": "Tandoori chicken infused with the zesty flavor of lemon, a refreshing and tangy delight.",
+        "halfPrice": "220",
+        "fullPrice": "420",
+        "type": "non-veg"
+      },
+      {
+        "name": "Afghani Tandoori",
+        "description": "Creamy and mildly spiced tandoori chicken, prepared with a rich blend of cashews and cream.",
+        "halfPrice": "260",
+        "fullPrice": "480",
+        "type": "non-veg"
+      },
+      {
+        "name": "Makhmali Tandoori",
+        "description": "Velvety smooth tandoori chicken, marinated in a delicate mixture of cheese and cream.",
+        "halfPrice": "260",
+        "fullPrice": "480",
+        "type": "non-veg"
+      },
+      {
+        "name": "Special Malai Drum",
+        "description": "Tender chicken drumsticks marinated in a rich and creamy blend of spices.",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Barra",
+        "description": "Succulent chicken barra, marinated in a robust blend of spices and grilled to perfection.",
+        "halfPrice": "280",
+        "fullPrice": "540",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Peshawari Barra",
+        "description": "Chicken barra with a Peshawari influence, featuring a unique blend of aromatic spices.",
+        "halfPrice": "280",
+        "fullPrice": "540",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Variety Platter",
+        "description": "A variety of chicken tikka and seekh kebab preparations, each with its own distinct flavor profile.",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Tandoori Leg",
+        "description": "A single chicken leg, marinated in tandoori spices and cooked in a clay oven.",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Achari Kebab (6 Pcs)",
+        "description": "Chicken kebabs infused with the tangy flavor of Indian pickles (achari).",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Pudina Kebab (6 Pcs)",
+        "description": "Chicken kebabs flavored with fresh mint (pudina), a refreshing and aromatic delight.",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Banjara Kebab (6 Pcs)",
+        "description": "Chicken kebabs prepared with a rustic blend of spices, reminiscent of the Banjara region.",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Nawabi Kebab (6 Pcs)",
+        "description": "Royal chicken kebabs, prepared with rich spices and a touch of elegance.",
+        "halfPrice": "",
+        "fullPrice": "440",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Chaap Tandoori (3 Pcs)",
+        "description": "Tender mutton chops marinated in tandoori spices and cooked in a clay oven.",
+        "halfPrice": "",
+        "fullPrice": "520",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Barra (4 Pcs)",
+        "description": "Succulent mutton barra, marinated in a robust blend of spices and grilled to perfection.",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Turkey Boti (6 Pcs)",
+        "description": "Boneless pieces of mutton, marinated in a blend of Turkish-inspired spices.",
+        "halfPrice": "",
+        "fullPrice": "520",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Seekh (4 Pcs)",
+        "description": "Minced mutton kebabs, skewered and grilled to perfection.",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Tikka",
+        "description": "Plump prawns marinated in a vibrant blend of spices and grilled to perfection.",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Paneer Tikka",
+        "description": "Cubes of paneer marinated in a spiced yogurt mixture and grilled in a tandoor.",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+    "category": "Fry Pan Treat",
+    "items": [
+      {
+        "name": "Prawns Fry",
+        "description": "Fresh prawns, lightly battered and fried to golden perfection.",
+        "halfPrice": "700",
+        "fullPrice": "1400",
+        "type": "non-veg"
+      },
+      {
+        "name": "Rawas Fry",
+        "description": "Slices of rawas fish, marinated and shallow fried.",
+        "halfPrice": "700",
+        "fullPrice": "1400",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lasooni",
+        "description": "Chicken cooked with a strong flavor of garlic.",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lalmirch",
+        "description": "Chicken dish made with red chili.",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Dry Fruit",
+        "description": "Chicken cooked with a variety of dry fruits.",
+        "halfPrice": "",
+        "fullPrice": "420",
+        "type": "non-veg"
+      },
+      {
+        "name": "Golden Chicken",
+        "description": "Crispy fried chicken.",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Sukka",
+        "description": "Chicken cooked until almost dry.",
+        "halfPrice": "",
+        "fullPrice": "390",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Kalimiri",
+        "description": "Chicken cooked with black pepper.",
+        "halfPrice": "",
+        "fullPrice": "390",
+        "type": "non-veg"
+      },
+      {
+        "name": "Dal Khichdi",
+        "description": "A simple lentil and rice dish.",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "veg"
+      },
+      {
+        "name": "Dal Fry",
+        "description": "Lentils cooked and tempered with spices.",
+        "halfPrice": "",
+        "fullPrice": "100",
+        "type": "veg"
+      },
+      {
+        "name": "Dal Tadka",
+        "description": "Lentils cooked and tempered with spiced oil.",
+        "halfPrice": "",
+        "fullPrice": "140",
+        "type": "veg"
+      },
+      {
+        "name": "Dal Ghee",
+        "description": "Lentils cooked with clarified butter.",
+        "halfPrice": "",
+        "fullPrice": "140",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+    "category": "Tawa Special",
+    "items": [
+      {
+        "name": "Mix Katakat",
+        "description": "A Tawa preparation of bheja (brain), gurda (kidney), and kaleji (liver).",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Double Bheja Masala",
+        "description": "A rich preparation of bheja (brain) cooked with spices.",
+        "halfPrice": "",
+        "fullPrice": "540",
+        "type": "non-veg"
+      },
+      {
+        "name": "Double Gurda Masala",
+        "description": "A spicy preparation of gurda (kidney).",
+        "halfPrice": "",
+        "fullPrice": "420",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bheja Masala",
+        "description": "Brain cooked with a blend of spices.",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bheja Gurda Masala",
+        "description": "Brain and kidney cooked together in a spicy masala.",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bheja Kaleji Masala",
+        "description": "Brain and liver cooked in a spicy masala.",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Gurda Kaleji Masala",
+        "description": "Kidney and liver cooked in a spicy masala.",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kaleji Masala",
+        "description": "Liver cooked with a blend of spices.",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "non-veg"
+      },
+      {
+        "name": "Gurda Masala",
+        "description": "Kidney cooked with a blend of spices.",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      }
+    ]
+  },
+  {
+    "category": "Tawa Chicken Gravy",
+    "items": [
+      {
+        "name": "Murg Musallam",
+        "description": "Whole chicken in rich gravy",
+        "halfPrice": "400",
+        "fullPrice": "780",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lazeez",
+        "description": "Creamy chicken gravy",
+        "halfPrice": "250",
+        "fullPrice": "480",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lahori",
+        "description": "Punjabi-style chicken curry",
+        "halfPrice": "250",
+        "fullPrice": "480",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lajawab",
+        "description": "Special recipe chicken gravy",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Patiyala",
+        "description": "Chicken with egg gravy",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Masala",
+        "description": "Traditional chicken curry",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken 65 Masala",
+        "description": "Spicy fried chicken in gravy",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Kolhapuri",
+        "description": "Fiery red chicken curry",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Khurchan (Boneless)",
+        "description": "Shredded boneless chicken gravy",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Tikka Masala (Boneless)",
+        "description": "Grilled chicken tikka in gravy",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Hyderabadi (Boneless)",
+        "description": "Andhra-style chicken curry",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Bhuna (Boneless)",
+        "description": "Dry cooked chicken masala",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Butter Chicken",
+        "description": "Creamy tomato-based chicken",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Charbaug",
+        "description": "Four-variety chicken platter",
+        "halfPrice": "",
+        "fullPrice": "450",
+        "type": "non-veg"
+      }
+    ]
+  },
+  {
+    "category": "Tawa Mutton Gravy",
+    "items": [
+      {
+        "name": "Mutton Lazeez",
+        "description": "Creamy mutton gravy",
+        "halfPrice": "380",
+        "fullPrice": "740",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Lahori",
+        "description": "Punjabi-style mutton curry",
+        "halfPrice": "380",
+        "fullPrice": "740",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Lajawab",
+        "description": "Special recipe mutton gravy",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Changezi",
+        "description": "Rich white mutton gravy",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Khada Masala",
+        "description": "Whole-spice mutton curry",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Boti Masala",
+        "description": "Boneless mutton curry",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Bhuna",
+        "description": "Dry cooked mutton masala",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Chaap Masala (3 Pcs)",
+        "description": "Mutton chops in gravy",
+        "halfPrice": "",
+        "fullPrice": "640",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Patiyala",
+        "description": "Mutton with egg gravy",
+        "halfPrice": "",
+        "fullPrice": "420",
+        "type": "non-veg"
+      }
+    ]
+  },  {
+    "category": "Tawa Fish Gravy",
+    "items": [
+      {
+        "name": "Rawas Tawa Masala",
+        "description": "Indian salmon in spiced tawa gravy",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Rawas Khada Masala",
+        "description": "Salmon with whole spices in gravy",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Tawa Masala",
+        "description": "Jumbo prawns in spicy tawa gravy",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Khada Masala",
+        "description": "Prawns cooked with whole spices",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      }
+    ]
+  },
+  {
+    "category": "Tawa Veg Gravy",
+    "items": [
+      {
+        "name": "Paneer Lajawab",
+        "description": "Cottage cheese in special gravy",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Masala",
+        "description": "Cottage cheese in tomato-based gravy",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Matar Mushroom Masala",
+        "description": "Peas and mushrooms in spicy gravy",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Mushroom Masala",
+        "description": "Cottage cheese and mushroom curry",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Kolhapuri",
+        "description": "Spicy mixed vegetable curry",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Mix Vegetable Masala",
+        "description": "Seasonal vegetables in gravy",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Khada Masala",
+        "description": "Cottage cheese with whole spices",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Matar Paneer Masala",
+        "description": "Peas and cottage cheese curry",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+    "category": "Tawa Pulav",
+    "items": [
+      {
+        "name": "Double Bheja Pulav",
+        "description": "Rice with chicken brain",
+        "halfPrice": "",
+        "fullPrice": "580",
+        "type": "non-veg"
+      },
+      {
+        "name": "Double Bheja Gurda Pulav",
+        "description": "Rice with brain and kidney",
+        "halfPrice": "",
+        "fullPrice": "520",
+        "type": "non-veg"
+      },
+      {
+        "name": "Katakat Pulav",
+        "description": "Rice with mixed offal",
+        "halfPrice": "",
+        "fullPrice": "420",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bheja Pulav",
+        "description": "Chicken brain rice",
+        "halfPrice": "",
+        "fullPrice": "380",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kheema Bheja Pulav",
+        "description": "Minced meat with brain rice",
+        "halfPrice": "",
+        "fullPrice": "400",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kheema Pulav",
+        "description": "Minced meat rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bheja Gurda Mix Pulav",
+        "description": "Brain and kidney rice",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kaleji Bheja Mix Pulav",
+        "description": "Liver and brain rice",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Gurda Kaleji Mix Pulav",
+        "description": "Kidney and liver rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Gurda Pulav",
+        "description": "Chicken kidney rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kaleji Pulav",
+        "description": "Chicken liver rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Tawa Biryani",
+        "description": "Traditional chicken biryani",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Tikka Biryani",
+        "description": "Chicken tikka flavored rice",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Pulav",
+        "description": "Fragrant mutton rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Pulav",
+        "description": "Spiced chicken rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Pulav",
+        "description": "Prawn-infused rice dish",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Tawa Biryani",
+        "description": "Layered mutton biryani",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Paneer Tikka Biryani",
+        "description": "Vegetarian tikka rice",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Pulav",
+        "description": "Mixed vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Biryani",
+        "description": "Spiced vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+    "category": "Chinese",
+    "items": [
+      {
+        "name": "Bombay Special Soup",
+        "description": "Meat and vegetable broth",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "non-veg"
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "description": "Spicy-tangy chicken soup",
+        "halfPrice": "",
+        "fullPrice": "130",
+        "type": "non-veg"
+      },
+      {
+        "name": "Manchow Soup",
+        "description": "Crunchy noodles in chicken soup",
+        "halfPrice": "",
+        "fullPrice": "130",
+        "type": "non-veg"
+      },
+      {
+        "name": "Garlic Soup",
+        "description": "Garlic-infused chicken broth",
+        "halfPrice": "",
+        "fullPrice": "120",
+        "type": "non-veg"
+      },
+      {
+        "name": "Clear Soup",
+        "description": "Light chicken consommé",
+        "halfPrice": "",
+        "fullPrice": "130",
+        "type": "non-veg"
+      },
+      {
+        "name": "Lung Fung Soup",
+        "description": "Thick chicken corn soup",
+        "halfPrice": "",
+        "fullPrice": "140",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bombay Spl. Chilli",
+        "description": "Crispy chicken chili starter",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Crispy",
+        "description": "Battered fried chicken",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lollipop (8 Pcs)",
+        "description": "French-cut chicken wings",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Lollipop (4 Pcs)",
+        "description": "Half portion chicken lollipop",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Lollipop (8 Pcs)",
+        "description": "Spicy red chili chicken",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Lollipop (4 Pcs)",
+        "description": "Half portion schezwan chicken",
+        "halfPrice": "",
+        "fullPrice": "190",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Oyster Chilli",
+        "description": "Chicken in oyster sauce",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Chilli",
+        "description": "Chili garlic chicken",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Manchurian",
+        "description": "Fried chicken in brown sauce",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Schezwan",
+        "description": "Red chili chicken stir-fry",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Dragon",
+        "description": "Crispy chili chicken",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Hunan",
+        "description": "Sichuan pepper chicken",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Kung Pao",
+        "description": "Chicken with peanuts and chili",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bombay Special Chilli",
+        "description": "Signature chili chicken",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Oyster Chicken",
+        "description": "Chicken in oyster sauce gravy",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Chicken",
+        "description": "Spicy red chili chicken gravy",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Manchurian Chicken",
+        "description": "Chicken balls in soy sauce",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Chilli",
+        "description": "Green chili chicken stir-fry",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Hunan Chicken",
+        "description": "Dry chili chicken preparation",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Dragon Chicken",
+        "description": "Crispy chicken in sweet-spicy sauce",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Singapore Chicken",
+        "description": "Curry leaf flavored chicken",
+        "halfPrice": "",
+        "fullPrice": "250",
+        "type": "non-veg"
+      },
+      {
+        "name": "Kung Pao Chicken",
+        "description": "Stir-fried chicken with vegetables",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Lollypop Gravy (4 Pcs)",
+        "description": "Chicken lollipops in sauce",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Green Pepper",
+        "description": "Chicken with bell peppers",
+        "halfPrice": "",
+        "fullPrice": "250",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Barbeque",
+        "description": "BBQ sauce glazed chicken",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Kepsa Rice",
+        "description": "Arabian-style chicken rice",
+        "halfPrice": "500",
+        "fullPrice": "900",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mutton Kepsa Rice",
+        "description": "Spiced mutton rice dish",
+        "halfPrice": "750",
+        "fullPrice": "1400",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bombay Spl. Rice (Gravy)",
+        "description": "Special fried rice with gravy",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken American Rice (Gravy)",
+        "description": "Chicken fried rice with gravy",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Mix Fried Rice",
+        "description": "Combination fried rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Malaysian Rice",
+        "description": "Nasi goreng style rice",
+        "halfPrice": "",
+        "fullPrice": "360",
+        "type": "non-veg"
+      },
+      {
+        "name": "Pot Rice",
+        "description": "Claypot cooked rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Oyster Chilli Rice (Gravy)",
+        "description": "Rice with oyster-chili sauce",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Dragon Rice",
+        "description": "Spicy schezwan fried rice",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Leg Rice",
+        "description": "Chicken leg piece rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Triple Rice (Gravy)",
+        "description": "Three-meat combination rice",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Tandoori Fried Rice",
+        "description": "Smoky tandoori flavored rice",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Chilli Rice (Gravy)",
+        "description": "Chili chicken with rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Manchurian Rice (Gravy)",
+        "description": "Manchurian sauce with rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Singapore Rice",
+        "description": "Curry flavored fried rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Hongkong Rice",
+        "description": "Cantonese-style fried rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Korean Rice",
+        "description": "Kimchi flavored rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Shanghai Rice",
+        "description": "Sticky soy sauce rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Combination Rice",
+        "description": "Mixed meat and vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Rice",
+        "description": "Spicy red chili fried rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chicken Fried Rice",
+        "description": "Classic chicken fried rice",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "non-veg"
+      },
+      {
+        "name": "Burnt Garlic Rice",
+        "description": "Fried rice with roasted garlic",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "non-veg"
+      },
+      {
+        "name": "Burnt Ginger Rice",
+        "description": "Ginger flavored fried rice",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "non-veg"
+      },
+      {
+        "name": "Egg Fried Rice",
+        "description": "Simple egg fried rice",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "non-veg"
+      },
+      {
+        "name": "Bombay Special Noodles (Gravy)",
+        "description": "Signature noodle preparation",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Manchurian Noodles (Gravy)",
+        "description": "Noodles with Manchurian sauce",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Triple Noodles (Gravy)",
+        "description": "Three-meat combination noodles",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chilli Noodles (Gravy)",
+        "description": "Spicy chili garlic noodles",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Schezwan Noodles",
+        "description": "Red chili flavored noodles",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "non-veg"
+      },
+      {
+        "name": "Singapore Noodles",
+        "description": "Curry flavored thin noodles",
+        "halfPrice": "",
+        "fullPrice": "190",
+        "type": "non-veg"
+      },
+      {
+        "name": "Hongkong Noodles",
+        "description": "Thick saucy noodles",
+        "halfPrice": "",
+        "fullPrice": "190",
+        "type": "non-veg"
+      },
+      {
+        "name": "Hakka Noodles",
+        "description": "Vegetable stir-fry noodles",
+        "halfPrice": "",
+        "fullPrice": "160",
+        "type": "non-veg"
+      },
+      {
+        "name": "Burnt Garlic Noodles",
+        "description": "Noodles with roasted garlic",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "non-veg"
+      },
+      {
+        "name": "Burnt Ginger Noodles",
+        "description": "Ginger flavored noodles",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "non-veg"
+      },
+      {
+        "name": "American Chopsuey",
+        "description": "Crispy noodles with sweet-sour sauce",
+        "halfPrice": "",
+        "fullPrice": "230",
+        "type": "non-veg"
+      },
+      {
+        "name": "Chinese Chopsuey",
+        "description": "Soft noodles in gravy",
+        "halfPrice": "",
+        "fullPrice": "230",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Chilli / Manchurian / Hongkong)",
+        "description": "Prawns in choice of sauce",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Oyster / Barbeque)",
+        "description": "Prawns in selected glaze",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Butter Garlic / Soya Garlic / Hot Garlic)",
+        "description": "Garlic variants prawn preparation",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Shanghai / Singapore / Schezwan)",
+        "description": "Regional style prawn dishes",
+        "halfPrice": "",
+        "fullPrice": "290",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Kung Pao / Hunan)",
+        "description": "Spicy prawn variations",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Oyster / Barbeque)",
+        "description": "Fish in selected marinade",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Butter Garlic / Soya Garlic / Hot Garlic)",
+        "description": "Garlic-based fish preparations",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Shanghai / Singapore / Schezwan)",
+        "description": "Regional fish specialties",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Black Pepper / Hot 'n' Pepper)",
+        "description": "Pepper-crusted fish dishes",
+        "halfPrice": "",
+        "fullPrice": "230",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Chilli / Manchurian)",
+        "description": "Fish in chili-based sauces",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Kung Pao / Hunan)",
+        "description": "Spicy fish preparations",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Chilli / Manchurian)",
+        "description": "Prawns in chili sauces",
+        "halfPrice": "",
+        "fullPrice": "310",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Oyster / Barbeque)",
+        "description": "Grilled/glazed prawn dishes",
+        "halfPrice": "",
+        "fullPrice": "330",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Black Pepper / Salt 'N' Pepper)",
+        "description": "Pepper-seasoned prawns",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Hong Kong / Schezwan)",
+        "description": "Regional prawn specialties",
+        "halfPrice": "",
+        "fullPrice": "310",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Butter Garlic / Hot Garlic)",
+        "description": "Garlic-infused prawn dishes",
+        "halfPrice": "",
+        "fullPrice": "330",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns (Kung Pao / Hunan)",
+        "description": "Spicy prawn variations",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Chilli / Manchurian)",
+        "description": "Fish in chili-based sauces",
+        "halfPrice": "",
+        "fullPrice": "270",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Oyster / Barbeque)",
+        "description": "Grilled fish preparations",
+        "halfPrice": "",
+        "fullPrice": "290",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Butter Garlic / Hot Garlic)",
+        "description": "Garlic-flavored fish dishes",
+        "halfPrice": "",
+        "fullPrice": "290",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Kung Pao / Hunan)",
+        "description": "Spicy fish specialties",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Fish (Black Pepper / Hot 'n' Pepper)",
+        "description": "Pepper-crusted fish",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Bombay Spl. Rice (Gravy)",
+        "description": "Signature prawn rice dish",
+        "halfPrice": "",
+        "fullPrice": "340",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Dragon Rice",
+        "description": "Spicy prawn fried rice",
+        "halfPrice": "",
+        "fullPrice": "320",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Chilli Rice (Gravy)",
+        "description": "Chili prawn with rice",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Manchurian Rice (Gravy)",
+        "description": "Prawn Manchurian with rice",
+        "halfPrice": "",
+        "fullPrice": "300",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Triple Rice (Gravy)",
+        "description": "Three-style prawn rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Schezwan Rice",
+        "description": "Spicy prawn fried rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Fried Rice",
+        "description": "Classic prawn fried rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Bombay Spl. Noodles (Gravy)",
+        "description": "Special prawn noodles",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Chilli Noodles (Gravy)",
+        "description": "Chili prawn noodles",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Manchurian Noodles (Gravy)",
+        "description": "Prawn Manchurian noodles",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Triple Noodles (Gravy)",
+        "description": "Three-style prawn noodles",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Hakka Noodles",
+        "description": "Stir-fried prawn noodles",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "non-veg"
+      },
+      {
+        "name": "Prawns Schezwan Noodles",
+        "description": "Spicy prawn noodles",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "non-veg"
+      }
+    ]
+  },
+  {
+    "category": "Chinese (Veg)",
+    "items": [
+      {
+        "name": "Bombay Special Soup",
+        "description": "Vegetable clear soup",
+        "halfPrice": "",
+        "fullPrice": "120",
+        "type": "veg"
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "description": "Spicy-tangy vegetable soup",
+        "halfPrice": "",
+        "fullPrice": "110",
+        "type": "veg"
+      },
+      {
+        "name": "Manchow Soup",
+        "description": "Crunchy noodles in veg broth",
+        "halfPrice": "",
+        "fullPrice": "110",
+        "type": "veg"
+      },
+      {
+        "name": "Sweet Corn Soup",
+        "description": "Creamy corn vegetable soup",
+        "halfPrice": "",
+        "fullPrice": "110",
+        "type": "veg"
+      },
+      {
+        "name": "Clear Soup",
+        "description": "Light vegetable consommé",
+        "halfPrice": "",
+        "fullPrice": "100",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Crispy",
+        "description": "Fried vegetable fritters",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Crispy",
+        "description": "Battered fried cottage cheese",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Mongolian",
+        "description": "Stir-fried cottage cheese",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer (Chilli / Manchurian)",
+        "description": "Cottage cheese in choice of sauce",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Baby Corn 'N' Mushroom (Chilli / Manchurian)",
+        "description": "Vegetables in selected sauce",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer (Chilli / Manchurian)",
+        "description": "Cottage cheese in sauces",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer (Hunan / Schezwan / Barbeque)",
+        "description": "Spicy cottage cheese variants",
+        "halfPrice": "",
+        "fullPrice": "270",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer (Red Chilli / Dragon)",
+        "description": "Specialty paneer dishes",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Butter Garlic",
+        "description": "Buttery garlic cottage cheese",
+        "halfPrice": "",
+        "fullPrice": "260",
+        "type": "veg"
+      },
+      {
+        "name": "Baby Corn 'N' Mushroom (Chilli / Manchurian)",
+        "description": "Vegetables in chili sauces",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Baby Corn 'N' Mushroom (Kung Pao / Schezwan)",
+        "description": "Spicy vegetable stir-fry",
+        "halfPrice": "",
+        "fullPrice": "250",
+        "type": "veg"
+      },
+      {
+        "name": "Baby Corn 'N' Mushroom (Hunan / Barbeque)",
+        "description": "Regional vegetable dishes",
+        "halfPrice": "",
+        "fullPrice": "250",
+        "type": "veg"
+      },
+      {
+        "name": "Bombay Special Rice (Gravy)",
+        "description": "Vegetable fried rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Manchurian Rice (Gravy)",
+        "description": "Vegetable Manchurian rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Chilli Rice (Gravy)",
+        "description": "Spicy vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "240",
+        "type": "veg"
+      },
+      {
+        "name": "Triple Rice (Gravy)",
+        "description": "Three-vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "230",
+        "type": "veg"
+      },
+      {
+        "name": "Pot Rice (Gravy)",
+        "description": "Claypot vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "veg"
+      },
+      {
+        "name": "Schezwan Rice",
+        "description": "Spicy vegetable fried rice",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Burnt Garlic / Ginger Rice",
+        "description": "Aromatic vegetable rice",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Fried Rice",
+        "description": "Cottage cheese fried rice",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Chilli Rice (Gravy)",
+        "description": "Chili paneer with rice",
+        "halfPrice": "",
+        "fullPrice": "280",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Fried Rice",
+        "description": "Classic vegetable fried rice",
+        "halfPrice": "",
+        "fullPrice": "160",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Hongkong Rice",
+        "description": "Cantonese-style veg rice",
+        "halfPrice": "",
+        "fullPrice": "220",
+        "type": "veg"
+      },
+      {
+        "name": "Veg. Singapore Rice",
+        "description": "Curry flavored veg rice",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Paneer Mushroom Rice",
+        "description": "Cottage cheese & mushroom rice",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Steam Rice",
+        "description": "Plain steamed rice",
+        "halfPrice": "",
+        "fullPrice": "100",
+        "type": "veg"
+      },
+      {
+        "name": "Jeera Rice",
+        "description": "Cumin-flavored rice",
+        "halfPrice": "",
+        "fullPrice": "120",
+        "type": "veg"
+      },
+      {
+        "name": "Bombay Spl. Noodles (Gravy)",
+        "description": "Signature vegetable noodles",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Manchurian Noodles (Gravy)",
+        "description": "Vegetable Manchurian noodles",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Triple Noodles (Gravy)",
+        "description": "Three-vegetable noodles",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Chilli Noodles (Gravy)",
+        "description": "Spicy vegetable noodles",
+        "halfPrice": "",
+        "fullPrice": "210",
+        "type": "veg"
+      },
+      {
+        "name": "Schezwan Noodles",
+        "description": "Red chili vegetable noodles",
+        "halfPrice": "",
+        "fullPrice": "180",
+        "type": "veg"
+      },
+      {
+        "name": "Singapore Noodles",
+        "description": "Curry flavored veg noodles",
+        "halfPrice": "",
+        "fullPrice": "170",
+        "type": "veg"
+      },
+      {
+        "name": "Hong Kong Noodles",
+        "description": "Thick saucy veg noodles",
+        "halfPrice": "",
+        "fullPrice": "170",
+        "type": "veg"
+      },
+      {
+        "name": "Hakka Noodles",
+        "description": "Stir-fried vegetable noodles",
+        "halfPrice": "",
+        "fullPrice": "150",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+    "category": "Breads",
+    "items": [
+      {
+        "name": "Tandoor ki Roti",
+        "description": "Whole wheat tandoor bread",
+        "halfPrice": "",
+        "fullPrice": "20",
+        "type": "veg"
+      },
+      {
+        "name": "Butter Roti",
+        "description": "Tandoor bread with butter",
+        "halfPrice": "",
+        "fullPrice": "25",
+        "type": "veg"
+      },
+      {
+        "name": "Naan (Plain)",
+        "description": "Leavened tandoor bread",
+        "halfPrice": "",
+        "fullPrice": "35",
+        "type": "veg"
+      },
+      {
+        "name": "Butter Naan",
+        "description": "Butter-glazed naan",
+        "halfPrice": "",
+        "fullPrice": "40",
+        "type": "veg"
+      },
+      {
+        "name": "Lacha Paratha",
+        "description": "Layered flaky bread",
+        "halfPrice": "",
+        "fullPrice": "40",
+        "type": "veg"
+      },
+      {
+        "name": "Kulcha Paratha",
+        "description": "Stuffed potato bread",
+        "halfPrice": "",
+        "fullPrice": "40",
+        "type": "veg"
+      },
+      {
+        "name": "Kamachi Naan",
+        "description": "Boat-shaped tandoor bread",
+        "halfPrice": "",
+        "fullPrice": "40",
+        "type": "veg"
+      },
+      {
+        "name": "Garlic Paratha",
+        "description": "Garlic-flavored layered bread",
+        "halfPrice": "",
+        "fullPrice": "60",
+        "type": "veg"
+      },
+      {
+        "name": "Cheese Naan",
+        "description": "Stuffed cheese bread",
+        "halfPrice": "",
+        "fullPrice": "90",
+        "type": "veg"
+      },
+      {
+        "name": "Roomali Roti",
+        "description": "Thin handkerchief bread",
+        "halfPrice": "",
+        "fullPrice": "40",
+        "type": "veg"
+      }
+    ]
+  },
+  {
+"category": "Papad",
+"items": [
+  {
+    "name": "Fry Papad",
+    "description": "Crispy deep-fried lentil wafer",
+    "halfPrice": "",
+    "fullPrice": "20",
+    "type": "veg"
+  },
+  {
+    "name": "Roasted Papad",
+    "description": "Traditional roasted lentil crisp",
+    "halfPrice": "",
+    "fullPrice": "20",
+    "type": "veg"
+  },
+  {
+    "name": "Masala Papad",
+    "description": "Roasted papad topped with spices and onions",
+    "halfPrice": "",
+    "fullPrice": "50",
+    "type": "veg"
+  }
+]
+},
+  {
+    "category": "Desserts",
+    "items": [
+      {
+        "name": "Caramel Custard",
+        "description": "Classic caramel pudding",
+        "halfPrice": "",
+        "fullPrice": "50",
+        "type": "veg"
+      },
+      {
+        "name": "Gulab Jamun (2 Pieces)",
+        "description": "Milk dumplings in sugar syrup",
+        "halfPrice": "",
+        "fullPrice": "50",
+        "type": "veg"
+      },
+      {
+        "name": "Rabdi",
+        "description": "Reduced milk dessert",
+        "halfPrice": "",
+        "fullPrice": "90",
+        "type": "veg"
+      },
+      {
+        "name": "Arabian Pudding",
+        "description": "Middle Eastern milk dessert",
+        "halfPrice": "",
+        "fullPrice": "70",
+        "type": "veg"
+      },
+      {
+        "name": "Choco Lava",
+        "description": "Chocolate molten cake",
+        "halfPrice": "",
+        "fullPrice": "90",
+        "type": "veg"
+      },
+      {
+        "name": "Brownie with Ice-Cream",
+        "description": "Walnut brownie with scoop",
+        "halfPrice": "",
+        "fullPrice": "120",
+        "type": "veg"
+      },
+      {
+        "name": "Mix Fruit Cream",
+        "description": "Fresh fruits in sweet cream",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Sitaphal Cream (Seasonal)",
+        "description": "Custard apple dessert",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Mango Cream (Seasonal)",
+        "description": "Mango pulp with cream",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      },
+      {
+        "name": "Strawberry Cream (Seasonal)",
+        "description": "Strawberries with cream",
+        "halfPrice": "",
+        "fullPrice": "200",
+        "type": "veg"
+      }
+    ]
+  }
+]
+
