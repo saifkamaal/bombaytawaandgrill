@@ -17,7 +17,6 @@
     gtag('config', 'G-C1KK1Y3BTT');
 
   </script>
-  <title>Bombay Tawa and Grill</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bombay Tawa and Grill</title>
@@ -31,7 +30,6 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    /* Remove Lucide font-face and .lucide class - No longer needed */
 
     /* Screen-reader only text */
     .sr-only {
@@ -670,7 +668,7 @@
             unforgettable dining experience. </p>
         </div>
         <div class="lg:w-1/2 w-full">
-          <img src="https://placehold.co/600x450/d97706/111827?text=Our+Warm+Ambiance" alt="Restaurant Ambiance"
+          <img src="images/ambience1.jpeg" alt="Restaurant Ambiance"
             class="rounded-lg shadow-lg w-full h-auto object-cover"
             onerror="this.src='https://placehold.co/600x450/374151/9ca3af?text=Image+Not+Found'">
 
@@ -744,11 +742,11 @@
                               <strong>Phone:</strong>
                               <a href="tel:+919324856960" class="text-accent hover:text-amber-400 ml-2 transition-colors">9324856960/9137115338</a>
                           </p>
-                          <p class="text-gray-300 text-lg flex items-center break-words">
+                          <p class="text-gray-300 text-lg flex items-center overflow-x-auto">
                               <i class="fas fa-envelope mr-2 text-xl text-gray-400"></i>
                               <strong>Email:</strong>
                               <a href="mailto:bombaytawaandgrill@gmail.com"
-                                  class="text-accent hover:text-amber-400 ml-2 transition-colors max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap">
+                                  class="text-accent hover:text-amber-400 ml-2 transition-colors whitespace-nowrap">
                                   bombaytawaandgrill@gmail.com
                               </a>
                           </p>
@@ -769,13 +767,25 @@
                               <i class="fas fa-box mr-2 mt-1 text-xl text-accent text-gray-400"></i>
                               <span>Bulk Orders: Planning an event? Contact us for bulk order inquiries and catering options.</span>
                           </li>
-                          <li class="flex items-center">
-                              <i class="fas fa-external-link-alt mr-2 text-xl text-gray-400"></i>
-                              <span>Online Delivery:</span><a href="https://www.zomato.com/mumbai/bombay-tawa-and-grill-mira-road/" target="_blank"
-                                  rel="noopener noreferrer" class="ml-2 text-accent hover:text-amber-400 font-semibold">Zomato</a><span class="mx-1">/</span>
-                              <a href="https://www.swiggy.com/city/mumbai/bombay-tawa-and-grill-mira-road-rest1023429"
-                                  target="_blank" rel="noopener noreferrer" class="text-accent hover:text-amber-400 font-semibold">Swiggy</a>
-                          </li>
+                          <li class="flex items-center flex-nowrap">
+                            <i class="fas fa-external-link-alt mr-2 text-xl text-gray-400"></i>
+                            <span class="whitespace-nowrap mr-2">Online Delivery:</span>
+                            <div class="flex items-center gap-1">
+                                <a href="https://www.zomato.com/mumbai/bombay-tawa-and-grill-mira-road/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="text-accent hover:text-amber-400 font-semibold">
+                                    Zomato
+                                </a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://www.swiggy.com/city/mumbai/bombay-tawa-and-grill-mira-road-rest1023429"
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="text-accent hover:text-amber-400 font-semibold">
+                                    Swiggy
+                                </a>
+                            </div>
+                        </li>
                       </ul>
                   </div>
                   <div>
@@ -788,7 +798,7 @@
                       </p>
                   </div>
               </div>
-              <div>
+              <div class="lg:order-2">
                   <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-accent">Send Us a Message</h2>
                   <form id="contact-form" class="space-y-6">
                       <div>
@@ -816,13 +826,13 @@
                   </form>
                   <p id="form-error-message" class="text-red-500 text-sm mt-4 text-center hidden"></p>
               </div>
-              <div class="mt-12 map-container">
-                  <h2 class="text-2xl md:text-3xl font-semibold mb-5 text-accent flex items-center">
-                      <i class="fas fa-map-marker-alt mr-3 text-3xl"></i> Find Us Here
-                  </h2>
-                  <iframe src="https://maps.google.com/maps?q=Bombay%20Tawa%20and%20Grill%20Mira%20Road%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;"
-                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+          </div>
+          <div class="mt-12 map-container lg:order-3">
+              <h2 class="text-2xl md:text-3xl font-semibold mb-5 text-accent flex items-center">
+                  <i class="fas fa-map-marker-alt mr-3 text-3xl"></i> Find Us Here
+              </h2>
+              <iframe src="https://maps.google.com/maps?q=Bombay%20Tawa%20and%20Grill%20Mira%20Road%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
       </div>
   </section>
@@ -856,9 +866,8 @@
 
   <script>
     // --- Data ---
-    // Sample menu data (replace with your actual data source if needed)
     let menuData = [];
-    // Sample review data (replace with actual data)
+    //Review data
     let reviewData = [{ snippet: "This place has one of the best veg and non veg smoked and grilled starters, main courses, chineese and rice dishes. The platter is amazing and mouth watering. Chicken and mutton rolls, kababs are yummy. Perfect restaurant for family for lunch and dinner.", source: "MouthShut.com" }, { snippet: "Great place to dine with family and friends. Nice ambiance and delicious food. Tawa and grilled veg and non-veg starters and tikka's, main course, chineese and desserts.", source: "MouthShut.com" }, { snippet: "I had an excellent experience... The restaurant had good presentation and the staff were well-trained, providing great service. The prices were reasonable and the portion sizes were generous...", source: "Justdial" }, { snippet: "I had a fantastic experience... The service was great, and they delivered the correct items in good quantity. The food was fresh and tasty...", source: "Justdial" }, { author: "Anna K.", rating: 5, snippet: "Absolutely fantastic experience! The food was delicious, especially the grilled starters. Great ambiance for a family dinner.", source: "Google.com" }, { author: "David S.", rating: 5, snippet: "Wonderful service and truly authentic flavors. The Tawa dishes are a must-try! We'll definitely be back soon.", source: "Google.com" }, { author: "Maria L.", rating: 4, snippet: "Very nice place with tasty food and good presentation. Staff were attentive. A bit busy on Saturday, but worth the wait.", source: "Google.com" }, { author: "Atif Shaikh", rating: 5, snippet: "This place has one of the best veg and non veg smoked and grilled starters, main courses, chineese and rice dishes. The platter is amazing and mouth watering. Chicken and mutton rolls, kababs are yummy. Perfect restaurant for family for lunch and dinner.", source: "Google.com" }, { author: "Aamina Shaikh", rating: 5, snippet: "Great place to dine with family and friends. Nice ambiance and delicious food. Tawa and grilled veg and non-veg starters and tikka's, main course, chineese and desserts.", source: "Google.com" }, { author: "atif", rating: 5, snippet: "Tasty food. Fresh food. I had a fantastic experience at Bombay Tawa and Grill! The service was great, and they delivered the correct items in good quantity.", source: "Google.com" }, { author: "Saif Kamaal", rating: 5, snippet: "Tasty food. Fresh food. I had an excellent experience at BOMBAY TAWA AND GRILL. The restaurant had good presentation and the staff were well-trained, providing great service.", source: "Google.com" }];
 
     // --- Contact Form Constants ---
