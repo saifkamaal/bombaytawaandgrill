@@ -278,6 +278,23 @@
       box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.2), 0 4px 6px -4px rgba(245, 158, 11, 0.2);
       /* Enhanced shadow */
     }
+    
+    .button-secondary {
+      background-color: transparent;
+      border: 2px solid #f59e0b;
+      color: #f59e0b;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+    }
+
+    .button-secondary:hover {
+      background-color: #f59e0b;
+      color: #1e293b;
+      transform: translateY(-2px);
+    }
+
 
     /* Disabled state for contact button */
     #contact-submit-button:disabled {
@@ -494,7 +511,7 @@
 
   <div id="mobile-menu" class="fixed inset-0 bg-slate-900 bg-opacity-95 z-40 pt-20 p-6 md:hidden">
     <button id="close-mobile-menu-button" class="absolute top-5 right-5 text-gray-400 hover:text-white text-4xl">
-      &times; </button>
+      × </button>
     <div class="flex flex-col space-y-8 items-center text-center mt-8">
       <a href="#" class="text-gray-200 hover:text-accent text-2xl font-semibold" data-page="home"
         onclick="showPage('home', this); closeMobileMenu();">Home</a>
@@ -515,8 +532,14 @@
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 leading-tight">Savor the Moment</h1>
           <p class="text-lg md:text-2xl mb-10 text-gray-200 max-w-xl mx-auto">Authentic flavors, unforgettable
             experiences crafted with passion.</p>
-          <button onclick="showPage('menu', document.querySelector('.nav-link[data-page=\'menu\']'))"
-            class="button-primary text-lg"> Explore Our Menu </button>
+          <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <button onclick="showPage('menu', document.querySelector('.nav-link[data-page=\'menu\']'))"
+              class="button-primary text-lg"> Explore Our Menu </button>
+            <a href="https://www.eazydiner.com/mumbai/bombay-tava-grill-mira-road-east-mumbai-704828" target="_blank"
+              class="button-secondary text-lg flex items-center justify-center">
+              Book a Table
+            </a>
+          </div>
         </div>
       </div>
 
@@ -635,6 +658,10 @@
           <input type="radio" id="filter-non-veg" name="menu-type" value="non-veg" onchange="filterMenu()">
           <label for="filter-non-veg" class="radio-label">Non-Veg</label>
         </div>
+        <a href="https://www.eazydiner.com/mumbai/bombay-tava-grill-mira-road-east-mumbai-704828" target="_blank"
+          class="button-primary w-full md:w-auto flex items-center justify-center">
+          Book a Table
+        </a>
       </div>
       <div id="no-results-message" class="text-center text-gray-400 py-10 hidden">
         <p class="text-2xl mb-2">😥</p>
@@ -672,7 +699,6 @@
 
           <div class="flex justify-center items-center space-x-8 mt-8 text-center">
             <div class="flex flex-col items-center">
-              <!-- Veg Icon -->
               <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" class="mb-2">
                 <rect width="32" height="32" fill="#008000" />
                 <circle cx="16" cy="16" r="8" fill="#FFFFFF" />
@@ -680,7 +706,6 @@
             </div>
 
             <div class="flex flex-col items-center">
-              <!-- Non-Veg Icon -->
               <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" class="mb-2">
                 <rect width="32" height="32" fill="#A52A2A" />
                 <circle cx="16" cy="16" r="8" fill="#FFFFFF" />
@@ -688,7 +713,6 @@
             </div>
 
             <div class="flex flex-col items-center">
-              <!-- Halal Icon -->
               <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" class="mb-2">
                 <circle cx="16" cy="16" r="16" fill="#008000" />
                 <text x="16" y="21" font-size="12" font-family="Arial, sans-serif" fill="white"
@@ -1424,7 +1448,7 @@
     });
 
   </script>
-<script src="https://cdn.shapo.io/js/google-badge-loader.js" data-settings="eyJwbGFjZUlkIjoiQ2hJSm9kNC1fbDJ4NXpzUnV2V3ExYkFUX2dzIiwicGxhY2VOYW1lIjoiQk9NQkFZIFRBV0EgQU5EIEdSSUxMIiwicGxhY2VBZGRyZXNzIjoiU2hvcCBOdW1iZXIgNyBhbmQgOCwgT3N0d2FsIE9yYml0IENIUywgSnVuY3Rpb24sIEthbmFraWEgUmQsIG5leHQgdG8gTWNEb25hbGQncywgQ2hhbmRhbiBTaGFudGksIE1pcmEgUm9hZCBFYXN0LCBNaXJhIEJoYXlhbmRhciwgTWFoYXJhc2h0cmEgNDAxMTA3LCBJbmRpYSIsInJhdGluZyI6NSwicmV2aWV3Q291bnQiOjQxLCJwb3NpdGlvbiI6ImJvdHRvbS1yaWdodCIsInRlbXBsYXRlIjoiZGFyayIsImJ1dHRvblRleHQiOiJMZWF2ZSBhIFJldmlldyIsImJ1dHRvbkNvbG9yIjoiIzQyODVGNCIsInJldmlld3MiOlt7ImF1dGhvck5hbWUiOiJtb2hkIHp1YmFpciBsb2RpIiwiYXV0aG9yUGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQUxWLVVqVzJLdTRSWWlTMEtBNGhhbndPZkRXQjlqenlJY2QzN2NQYUtBS3FXVGFYRDJNaURSV0Itdz1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vLWJhNiIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IklxYmFsIEFuc2FyaSIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1ValZwQUpPRlFBMGZGdE55V1ZGUGhtandOUW5xdlpVczExdk9aZ3BLdy1FTEtaWEtCRENRdnc9czEyOC1jMHgwMDAwMDAwMC1jYy1ycC1tby1iYTMiLCJyYXRpbmciOjAsInRleHQiOiIifSx7ImF1dGhvck5hbWUiOiJTaGFtc2hhZCBNYWxpayIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1Valh2ZzJMVkVtNDZMQ0tMWkFYZVMtXzhDRTQya2lVVjBON1o1R3NVSHBjUy1NM3JoaU00PXMxMjgtYzB4MDAwMDAwMDAtY2MtcnAtbW8iLCJyYXRpbmciOjAsInRleHQiOiIifSx7ImF1dGhvck5hbWUiOiJNdWJhc2hpcmEgTW90aXdhbGEiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pZYkswODFXbE0yQmZsNDhaVWtienJCLWxneHBVVVB0em8tSk05dHdyOWgzR2dNUT1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vLWJhMiIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IkFkaWwgS2hhbiIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1ValhqcFBNbGpJckR5bzEzektvSzRERldfYzBrbkRjRWZadHh0OFlkdU9uNkVnSjVJNmFYPXMxMjgtYzB4MDAwMDAwMDAtY2MtcnAtbW8tYmEzIiwicmF0aW5nIjowLCJ0ZXh0IjoiIn1dfQ=="></script>
+<script src="https://cdn.shapo.io/js/google-badge-loader.js" data-settings="eyJwbGFjZUlkIjoiQ2hJSm9kNC1fbDJ4NXpzUnV2V3ExYkFUX2dzIiwicGxhY2VOYW1lIjoiQk9NQkFZIFRBV0EgQU5EIEdSSUxMIiwicGxhY2VBZGRyZXNzIjoiU2hvcCBOdW1iZXIgNyBhbmQgOCwgT3N0d2FsIE9yYml0IENIUywgSnVuY3Rpb24sIEthbmFraWEgUmQsIG5leHQgdG8gTWNEb25hbGQncywgQ2hhbmRhbiBTaGFudGksIE1pcmEgUm9hZCBFYXN0LCBNaXJhIEJoYXlhbmRhciwgTWFoYXJhc2h0cmEgNDAxMTA3LCBJbmRpYSIsInJhdGluZyI6NSwicmV2aWV3Q291bnQiOjQxLCJwb3NpdGlvbiI6ImJvdHRvbS1yaWdodCIsInRlbXBsYXRlIjoiZGFyayIsImJ1dHRvblRleHQiOiJMZWF2ZSBhIFJldmlldyIsImJ1dHRvbkNvbG9yIjoiIzQyODVGNCIsInJldmlld3MiOlt7ImF1dGhvck5hbWUiOiJtb2hkIHp1YmFpciBsb2RpIiwiYXV0aG9yUGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQUxWLVVqVzJLdTRSWWlTMEtBNGhhbndPZkRXQjlqenlJY2QzN2NQYUtBS3FXVGFYRDJNaURSV0Itdz1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vLWJhNiIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IklxYmFsIEFuc2FyaSIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1ValZwQUpPRlFBMGZGdE55V1ZGUGhtandOUW5xdlpVczExdk9aZ3BLdy1FTEtaWEtCRENRdnc9czEyOC1jMHgwMDAwMDAwMC1jYy1ycC1tby1iYTMiLCJyYXRpbmciOjAsInRleHQiOiIifSx7ImF1dGhvck5hbWUiOiJTaGFtc2hhZCBNYWxpayIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1Valh2ZzJMVkVtNDZMQ0tMWkFYZVMtXzhDRTQya2lVVjBON1o1R3NVSHBjUy1NM3JoaW00PXMxMjgtYzB4MDAwMDAwMDAtY2MtcnAtbW8iLCJyYXRpbmciOjAsInRleHQiOiIifSx7ImF1dGhvck5hbWUiOiJNdWJhc2hpcmEgTW90aXdhbGEiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pZYkswODFXbE0yQmZsNDhaVWtienJCLWxneHBVVVB0em8tSk05dHdyOWgzR2dNUT1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vLWJhMiIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IkFkaWwgS2hhbiIsImF1dGhvclBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FMVi1ValhqcFBNbGpJckR5bzEzektvSzRERldfYzBrbkRjRWZadHh0OFlkdU9uNkVnSjVJNmFYPXMxMjgtYzB4MDAwMDAwMDAtY2MtcnAtbW8tYmEzIiwicmF0aW5nIjowLCJ0ZXh0IjoiIn1dfQ=="></script>
 
 </body>
 
